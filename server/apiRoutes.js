@@ -58,6 +58,29 @@ app.get("/life", function(req, res) {
   });
 });
 
+// FOODS CHECKED OFF TO UPDATE
+
+app.get("/update", function(req, res) {
+  // UPDATE TO AVAILABLE LIST DUE TO EXPIRATION DATES
+  db.foods.update(
+  	{"_id": ObjectId("")},
+  	{$set: {"shelf_life": 0}},function(error, found) {
+    // Log any errors if the server encounters one
+    if (error) {
+      console.log(error);
+    }
+    // Otherwise, send the result of this query to the browser
+    else {
+      res.json(found);
+    }
+  });
+});
+
+// MANUAL DELETES BY USER - have to implement selected data
+app.get("/delete"), function(req,res){
+	db.foods.remove({"_id":ObjectId("")})
+	
+	}
 };
 
 

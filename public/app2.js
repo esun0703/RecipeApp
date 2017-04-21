@@ -12,7 +12,7 @@ function getData(endpoint){
     console.log(data);
     for (var i = 0; i < data.length; i++) {
       // Append each of the animal's properties to the table
-      $("#results").append("<tr><td>" + data[i].food_name + "</td>" +
+      $("#foodDisplay1").append("<tr><td>" + data[i].food_name + "</td>" +
                            "<td>" + data[i].shelf_life + "</td>" + "</td></tr>");
     }
   });
