@@ -1,82 +1,62 @@
+
 var express = require("express");
 var mongojs = require("mongojs");
+var bodyParser = require("body-parser");
 
-// Initialize Express
 var app = express();
-
-// Set up a static folder (public) for our web app
 app.use(express.static("public"));
 
-// Database configuration
-// Save the URL of our database as well as the name of our collection
 var databaseUrl = "FOODLIFE";
 var collections = ["foods"];
 
 // Use mongojs to hook the database to the db variable
 var db = mongojs(databaseUrl, collections);
 
-// This makes sure that any errors are logged if mongodb runs into an issue
 db.on("error", function(error) {
   console.log("Database Error:", error);
 });
+// var app = express();
+var PORT = process.env.PORT || 3000;
+
+// parse application/x-www-form-urlencoded 
+app.use(bodyParser.urlencoded({ extended: true }))
+ 
+// parse application/json 
+app.use(bodyParser.json({ type: 'application/**json'}))
+
+app.use(bodyParser.raw({type: 'application/vnd.custom-type'}))
+
+app.use(bodyParser.text({type: 'text/html'}))
 
 
-// Routes
-// 1. At the root path, send a simple hello world message to the browser
-app.get("/", function(req, res) {
-  res.send("Hello world");
+app.use(express.static("public"));
+
+//Routes
+require("./apiRoutes.js")(app);
+
+
+app.listen(PORT, function() {
+  console.log("App listening on PORT: " + PORT);
 });
 
-// 2. At the "/all" path, display every entry in the animals collection
-app.get("/all", function(req, res) {
-  // Query: In our database, go to the animals collection, then "find" everything
-  db.foods.find({}, function(error, found) {
-    // Log any errors if the server encounters one
-    if (error) {
-      console.log(error);
-    }
-    // Otherwise, send the result of this query to the browser
-    else {
-      res.json(found);
+$("#namesort").click(function(){getData("/name")});
+
+$("#legsort").click(function(){getData("/legs")});
+
+
+function getData(endpoint){
+
+  $("#results").empty();
+
+  $.getJSON(endpoint, function(data) {
+    // For each entry of that json...
+    console.log(data);
+    for (var i = 0; i < data.length; i++) {
+      // Append each of the animal's properties to the table
+      $("#results").append("<tr><td>" + data[i].name + "</td>" +
+                           "<td>" + data[i].legs + "</td>" + "</td></tr>");
     }
   });
-});
+}
 
-// 3. At the "/name" path, display every entry in the animals collection, sorted by name
-app.get("/name", function(req, res) {
-  // Query: In our database, go to the animals collection, then "find" everything,
-  // but this time, sort it by name (1 means ascending order)
-  db.foods.find().sort({food_name: -1 }, function(error, found) {
-    // Log any errors if the server encounters one
-    if (error) {
-      console.log(error);
-    }
-    // Otherwise, send the result of this query to the browser
-    else {
-      res.json(found);
-    }
-  });
-});
-
-// 4. At the "/weight" path, display every entry in the animals collection, sorted by weight
-app.get("/life", function(req, res) {
-  // Query: In our database, go to the animals collection, then "find" everything,
-  // but this time, sort it by weight (-1 means descending order)
-  db.foods.find().sort({ shelf_life: -1 }, function(error, found) {
-    // Log any errors if the server encounters one
-    if (error) {
-      console.log(error);
-    }
-    // Otherwise, send the result of this query to the browser
-    else {
-      res.json(found);
-    }
-  });
-});
-
-app.get()
-
-// Set the app to listen on port 3000
-app.listen(3000, function() {
-  console.log("App running on port 3000!");
-});
+getData("/all");

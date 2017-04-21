@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Donations</title>
+<!--   //JQuery --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- //JQuery Mobile  -->
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<!-- Google Places -->
+<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU&libraries=places"></script> -->
+<!--Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Javascript Bootstrap -->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Search Query for Location --> 
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Search<span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#" id="search">Search</a></li>
+          <li><a href="#" id="maps">Map</a></li>
+          <li><a href="#">Logs</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" aria-label="..." id="input">
+    </div><!-- /input-group -->
+  </div><!-- /btn-group -->
+</div><!-- /input-group -->
+
+<div class="col-md-4">
+
+  <button type="button" id="foodz" class="btn btn-default">List of Foods</button>
+
+</div>
+
+
+<div class="col-md-4">
+
+  <button type="button" id="lyfe" class="btn btn-success">Shelf Life (Days)</button>
+
+</div>
+
+<div class="col-md-4">
+  
+  <button type="button" id="remove" class="btn btn-info">List of Finished/Expired Foods</button>
+
+</div>
+
+
+
+
+</body>
+<script type="text/javascript" src="maps.js">
+</script>
+</html>

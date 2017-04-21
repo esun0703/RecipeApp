@@ -10,11 +10,17 @@
     "babel-loader": "^6.4.1",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
+<<<<<<< HEAD
     "express": "^4.15.2",
     "mongodb": "^2.2.26",
     "mongojs": "^2.4.0",
+=======
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+>>>>>>> 838999948b1469537dcad9c44bdc31def1a138c1
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "request": "^2.81.0",
     "webpack": "^2.4.1"
   }
 }
