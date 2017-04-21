@@ -9,15 +9,5 @@ var moment = require("moment");
 
 ReactDOM.render(
   <div className="main-container">
-    // <div className="container">
-    //   <div className="jumbotron">
-
-    //     {/* Fill the blanks below with the name, dob, and then age in years  */}
-    //     <h2>My name is {name}.</h2>
-    //     <h1>I was born on {dob.format("MM/DD/YYYY")}</h1>
-    //     <hr />
-    //     <h2>That makes me: {dob.fromNow(true)} old.
-    //     </h2>
-    //   </div>
-    // </div>
+    
   </div>, document.getElementById(""));
