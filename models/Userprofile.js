@@ -18,7 +18,7 @@ var UserSchema = mongoose.Schema({
 	},
 	foods: 
 	[{fooditem: String,
-		expire: Date
+		purchaseDate: Date.now()
 	}]
 });
 
@@ -48,3 +48,4 @@ module.exports.comparePassword = function(candidatePassword, hash, callback){
     	callback(null, isMatch);
 	});
 }
+
