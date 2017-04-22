@@ -110,6 +110,7 @@ hr{
 	margin-left:0;
 	/*margin-left:10px;*/
 	/*margin-top:10px;*/
+	padding-top:0;
 	height:100px;
 	background-color:#ffffff;
 }
