@@ -3,7 +3,7 @@ var mongojs = require("mongojs");
 
 module.exports = function(app){
 
-var databaseUrl = "FOODLIFE";
+var databaseUrl = "mongodb://yumcache:yumcache@ds151917.mlab.com:51917/heroku_wdkfp391";
 var collections = ["foods"];
 
 var db = mongojs(databaseUrl, collections);
