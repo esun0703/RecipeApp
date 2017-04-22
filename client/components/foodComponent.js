@@ -1,4 +1,7 @@
-class FoodComponent extends React.Component{
+import React from "react";
+
+export default class FoodComponent extends React.Component{
+
 	constructor(){
 		super();
 	}

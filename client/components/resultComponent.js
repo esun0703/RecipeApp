@@ -1,8 +1,11 @@
 // var React = require("react");
-import from react;
+import React from "react";
 // var foodComponent = require("./foodComponent");
-import "./foodComponent";
-class Main extends React.Component {
+
+export default class ResultComponent extends React.Component {
+	constructor(){
+        super();
+    }
 	render(){
 		return(
 			<div class="col-md-8" id="recipeDisplay">
