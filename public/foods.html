@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Foods After Log In</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><!-- <span class="glyphicon glyphicon-user"></span> --> Sign Up</a></li>
+                <li><a href="#"><!-- <span class="glyphicon glyphicon-log-in"></span> --> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" id="side">
+                <div class="row" id="sideTitle">
+                    <h6>What Foods You Have</h6>
+                    <hr>
+                    <p>Foods (#)</p>
+                </div>
+                <div class="row" id="foodDisplay">
+                    <!-- individual food component -->
+                    <div class="row">
+                        <div class="foods">
+                            <p>Food Example<span class="expirationDate">#Weeks #Days</span></p>
+                        </div>
+                    </div>
+                    <!-- individual food component -->
+                    <div class="row">
+                        <div class="foods">
+                            <p>Food Example<span class="expirationDate">#Weeks #Days</span></p>
+                        </div>
+                    </div>
+
+                </div>
+                <input id="foodInput" type="text" placeholder="Food Input">
+                <button id="submitBtn">Submit</button>
+            </div>
+            <div class="col-md-8" id="recipeDisplay">
+                <div class="row">
+                    <!-- individual recipe component -->
+                    <div class="col-md-4 recipe">
+                        Recipe
+                    </div>
+                    <!-- individual recipe component -->
+                    <div class="col-md-4 recipe">
+                        Recipe
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- individual recipe component -->
+                    <div class="col-md-4 recipe">
+                        Recipe
+                    </div>
+                    <!-- individual recipe component -->
+                    <div class="col-md-4 recipe">
+                        Recipe
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- individual recipe component -->
+                    <div class="col-md-4 recipe">
+                        Recipe
+                    </div>
+                    <!-- individual recipe component -->
+                    <div class="col-md-4 recipe">
+                        Recipe
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
