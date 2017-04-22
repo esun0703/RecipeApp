@@ -13,7 +13,9 @@ $.ajax({
 			console.log(element.formatted_address);
 		});
 	})
-})
+});
+
+
 
 $("#maps").on("click", function(){
 	$("#a").append("<b>Appended text</b>");
