@@ -71,6 +71,7 @@ hr{
 	background-color:#ffffff;
 	height:90px;
 	margin:0;
+	padding-right:5px;
 	padding-top:10px;
 	padding-left:10px;
 	line-height: 0px;
@@ -123,7 +124,7 @@ hr{
 #submitBtn{
 	color:#ffffff;
 	border:none;
-	background-color:black;
+	background-color:#7ac8cb;
 	/*margin-left:10px;*/
 	width:100%;
 }
