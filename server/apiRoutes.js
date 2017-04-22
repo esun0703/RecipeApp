@@ -1,5 +1,16 @@
 var request = require("request");
+var mongojs = require("mongojs");
+
 module.exports = function(app){
+
+var databaseUrl = "FOODLIFE";
+var collections = ["foods"];
+
+var db = mongojs(databaseUrl, collections);
+
+db.on("error", function(error){
+	console.log("Database Error:", error);
+});
 
 app.get("/search", function(req,res){
 	request("https://maps.googleapis.com/maps/api/place/textsearch/json?query=" + req.query.query + "&key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU", function (error, response, body) {
