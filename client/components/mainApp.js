@@ -12,8 +12,14 @@ import ResultComponent from "./resultComponent.js"
         return(
             <div className="container">
                 <div className="row">
-                    <FoodDisplay/>
-                    <ResultComponent/>
+                  <div className="col-md-4">
+                        <FoodDisplay/>
+                    </div>
+                    
+                    <div className="col-md-8">
+                        <ResultComponent/>
+                    </div>
+ 
                 </div>
             </div>
         );
