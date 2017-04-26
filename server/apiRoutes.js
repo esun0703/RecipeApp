@@ -3,6 +3,7 @@ var express = require("express");
 var request = require("request");
 var mongojs = require("mongojs");
 var path = require("path");
+var logger = require("morgan");
 
 var databaseUrl = "mongodb://yumcache:yumcache@ds151917.mlab.com:51917/heroku_wdkfp391";
 var collections = ["foods"];
@@ -31,7 +32,13 @@ module.exports = function(app) {
 
 		//todo find the users foods
 		res.send([]);
-	})
+	});
+
+	app.post('/food', function(req,res){
+
+
+
+	});
 
 
 

@@ -14,3 +14,19 @@ import Main from "./components/mainApp";
 ReactDOM.render(
   <Main/>, document.getElementById("foodRoot"));
 // >>>>>>> 65ffaa92ca6e1e8a2051bb0d5d450b2dfb14ac47
+
+
+// WORKKING ON THE ONCLICK FUNCTION to validate data
+
+	$('#submitBtn').on('click', addFood);
+
+function addFood(event){
+	event.preventDefault();
+}
+
+var errorCount = 0;
+$('#addFood input').each(function(index, val){
+	if($(this).val() === '') { errorCount++; }
+})
+
+module.exports = app;

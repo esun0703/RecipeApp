@@ -12,6 +12,7 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "logger": "0.0.1",
     "mongo": "^0.1.0",
     "mongodb": "^2.2.26",
     "mongojs": "^2.4.0",
