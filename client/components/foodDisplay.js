@@ -8,9 +8,9 @@ import FoodComponent from "./foodComponent.js";
   
     render(){
 		return(
-			<div className="col-md-4" id="side">
+			<div id="side">
 				<div className="row" id="sideTitle">
-					<h6>What Foods You Have</h6>
+					<h6>What's In Your Fridge</h6>
 					<hr/>
 					<p>Foods (#)</p>
 				</div>
