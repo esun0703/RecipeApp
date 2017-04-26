@@ -12,6 +12,7 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "mongo": "^0.1.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "request": "^2.81.0",
