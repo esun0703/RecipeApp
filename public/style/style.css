@@ -40,13 +40,26 @@ hr{
    border-color: transparent;
    border-bottom:2px solid #7ac8cb;
    padding-right:10px;
+   
+}
 
+.container-fluid{
+	position:relative;
+
+	/*text-align:center;*/
 }
 
 .navbar ul{
 	color:#7ac8cb;
 }
 
+
+#navImg{
+	position:absolute;
+	left:45%;
+	margin-top:10px;
+	width:13%;
+}
 
 .rightAlign{
 	text-align:right;
@@ -56,10 +69,10 @@ hr{
 	height:650px;
 	background-color:#dddddd;
 	margin-left:70px;
-	padding-left:45px;
-	padding-top:18px;
-	padding-right:40px;
-	padding-bottom:30px;
+	padding-left:10px;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
 	/*padding-right:20px;*/
 	border-bottom:2px solid #dddddd;
 	/*padding-top:10px;*/
@@ -95,7 +108,7 @@ hr{
 	width:100%;
 	height:50px;
 	padding-top:15px;
-	padding-left:20px;
+	padding-left:10px;
 	/*margin-top:5px;*/
 	/*margin-left:15px;*/
 	background-color:#ffffff;
@@ -133,8 +146,7 @@ hr{
 }
 
 .recipe{
-	/*width:300px;*/
-	/*height:300px;*/
+	height:200px;
 	margin-right:10px;
 	margin-bottom:20px;
 	background-color:#ffffff;
@@ -142,10 +154,11 @@ hr{
 
 #recipeDisplay {
 	background-color:#eaeaea;
-	width:60%;
 	padding-top:20px;
-	padding-left:80px;
+	padding-left:15px;
 	margin:0;
 	height:650px;
 	overflow:scroll;
 }
+
+

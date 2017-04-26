@@ -8,6 +8,7 @@ export default class ResultComponent extends React.Component {
         super();
 
 this.state={
+	//el is each element in the array. 
 	recipes: Array(12).fill(0).map((el, id)=>({name: id, id}))
 }
     }
@@ -18,8 +19,6 @@ this.state={
 				<div className="col-md-4" key={idx}>
 					<RecipeComponent recipe={r}/>
 				</div>)}
-
-		
 			</div>
 		)
 	}
