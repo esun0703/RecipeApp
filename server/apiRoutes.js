@@ -45,6 +45,11 @@ module.exports = function(app) {
 		});
 	});
 
+app.get("/maps", function(req,res){
+
+		request("https://maps.googleapis.com/maps/api/geocode/json?address=" + req.&key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU")
+
+})
 
 
 
