@@ -40,13 +40,26 @@ hr{
    border-color: transparent;
    border-bottom:2px solid #7ac8cb;
    padding-right:10px;
+   
+}
 
+.container-fluid{
+	position:relative;
+
+	/*text-align:center;*/
 }
 
 .navbar ul{
 	color:#7ac8cb;
 }
 
+
+#navImg{
+	position:absolute;
+	left:45%;
+	margin-top:10px;
+	width:13%;
+}
 
 .rightAlign{
 	text-align:right;
@@ -56,10 +69,10 @@ hr{
 	height:650px;
 	background-color:#dddddd;
 	margin-left:70px;
-	padding-left:45px;
-	padding-top:18px;
-	padding-right:40px;
-	padding-bottom:30px;
+	padding-left:10px;
+	padding-top:10px;
+	padding-right:10px;
+	padding-bottom:10px;
 	/*padding-right:20px;*/
 	border-bottom:2px solid #dddddd;
 	/*padding-top:10px;*/
@@ -71,12 +84,16 @@ hr{
 	background-color:#ffffff;
 	height:90px;
 	margin:0;
+	padding-right:5px;
 	padding-top:10px;
 	padding-left:10px;
 	line-height: 0px;
 }
 
 #foodDisplay{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-around;
 	width:100%;
 	background-color:#a5a5a5;
 	height:400px;
@@ -91,21 +108,26 @@ hr{
 	width:100%;
 	height:50px;
 	padding-top:15px;
-	padding-left:20px;
+	padding-left:10px;
 	/*margin-top:5px;*/
-	margin-left:15px;
+	/*margin-left:15px;*/
 	background-color:#ffffff;
 	border-top:2px solid #dddddd;
 	border-bottom:none;
 	/*border-bottom:2px solid #dddddd;*/
 }
 
-/*.expirationDate{
-	margin-left:90px;
-	text-align:right;
-}*/
+.foodName{
+	float:left;
+}
+
+.expirationDate{
+	margin-right:10px;
+	float:right;
+}
 
 #foodInput{
+	clear:both;
 	width:100%;
 	margin-left:0;
 	/*margin-left:10px;*/
@@ -121,14 +143,13 @@ hr{
 #submitBtn{
 	color:#ffffff;
 	border:none;
-	background-color:black;
+	background-color:#7ac8cb;
 	/*margin-left:10px;*/
 	width:100%;
 }
 
 .recipe{
-	width:300px;
-	height:300px;
+	height:200px;
 	margin-right:10px;
 	margin-bottom:20px;
 	background-color:#ffffff;
@@ -136,10 +157,11 @@ hr{
 
 #recipeDisplay {
 	background-color:#eaeaea;
-	width:60%;
 	padding-top:20px;
-	padding-left:80px;
+	padding-left:15px;
 	margin:0;
 	height:650px;
 	overflow:scroll;
 }
+
+
