@@ -34,11 +34,22 @@ module.exports = function(app) {
 		res.send([]);
 	});
 
-	app.post('/food', function(req,res){
+	app.post('/submitfood', function(req,res){
 
+		var foodEntry = req.body;
 
+		food.done = false;
 
+		db.foods.save(food, function(error, saved){
+			if (error){
+				console.log(error);
+			} else {
+				res.send(saved);
+			}
+		});
 	});
+
+
 
 
 

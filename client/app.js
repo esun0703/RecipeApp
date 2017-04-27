@@ -24,9 +24,22 @@ function addFood(event){
 	event.preventDefault();
 }
 
-var errorCount = 0;
-$('#addFood input').each(function(index, val){
-	if($(this).val() === '') { errorCount++; }
-})
+$("#submitBtn").on("click", function(){
+	$.ajax({
+		type:"POST",
+		url:"/submitfood",
+		dataType: "json",
+		data: {
+			food_name:food_name;
+			shelf_life: shelf_life;
+			created: Date.now()
+		}
+	})
+	.done(function(data){
+		console.log(data);
+
+	});
+	return false;
+});
 
 module.exports = app;
