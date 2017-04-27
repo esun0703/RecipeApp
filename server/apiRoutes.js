@@ -26,15 +26,15 @@ module.exports = function(app) {
 	//endpoint to return a list of the user's foods with the xpiration date
 	app.get('/userfoods', function(req, res) {
 		
-		app.get("/", function(req, res){
-			res.sendFile(path.join(__dirname, "../public/foods.html"))
-		});
+	res.sendFile(path.join(__dirname, "../public/foods.html"))
 
 		//todo find the users foods
-		res.send([]);
+		// res.send([]);
 	});
 
 	app.post('/submitfood', function(req,res){
+
+	res.sendFile(path.join(__dirname, "../public/foodlist.html"))
 
 		var foodEntry = req.body;
 
