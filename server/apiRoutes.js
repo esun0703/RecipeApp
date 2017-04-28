@@ -18,25 +18,25 @@ db.on("error", function(error){
 
 module.exports = function(app) {
 
-	app.get("/", function(req, res){
-		res.sendFile(path.join(__dirname, "../public/index.html"))
+	app.get('/', function(req, res){
+		res.sendFile(path.join(__dirname, '../public/index.html'))
 	});
 
 
 	//endpoint to return a list of the user's foods with the xpiration date
-	app.get('/userfoods', function(req, res) {
+	// app.get('/userfoods', function(req, res) {
 		
-	res.sendFile(path.join(__dirname, "../public/foods.html"))
+	// res.sendFile(path.join(__dirname, "../public/foods.html"))
 
-		//todo find the users foods
-		// res.send([]);
-	});
+	// 	//todo find the users foods
+	// 	// res.send([]);
+	// });
 
-	app.post('/submitfood', function(req,res){
+	app.post('/userfoods', function(req,res){
 
-	res.sendFile(path.join(__dirname, "../public/foodlist.html"))
+	// res.sendFile(path.join(__dirname, "../public/foodlist.html"))
 
-		var foodEntry = req.body;
+		var food = req.body;
 
 		food.done = false;
 
@@ -49,7 +49,19 @@ module.exports = function(app) {
 		});
 	});
 
+app.get("/all", function(req, res) {
+  
+  // res.sendFile(path.join(__dirname, "../public/foodlist.html"))
 
+  db.foods.find({}, function(error, found) {
+    if (error) {
+      console.log(error);
+    }
+    else {
+      res.json(found);
+    }
+  });
+});
 
 
 
