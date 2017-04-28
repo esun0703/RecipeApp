@@ -8,9 +8,10 @@ export default class FoodComponent extends React.Component{
 	render(){
 		return(
 			// const {name,expiration}=this.props??
-			<div class="row">
-				<div class="foods">
-					<p>Food Example<span class="expirationDate">#Weeks #Days</span></p>
+			<div className="row">
+				<div className="foods">
+					<span className="foodName">Food Example</span>
+					<span className="expirationDate">#Weeks #Days</span>
 				</div>
 			</div>
 		)
