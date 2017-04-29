@@ -51,13 +51,14 @@ export default class Maps extends React.Component {
   render() {
   	console.log('4');
     const mapStyle = {
-      width: 500,
-      height: 300,
+      width: '100%',
+      height: 500,
       border: '1px solid black'
     };
    	
     return (
-      <div>
+      <div id="mapDisplay">
+        <h1>Nearby Food Pantries</h1>
         <div ref="map" id="mymap" style={mapStyle}>I should be a map!</div>
       </div>
     );
