@@ -2,7 +2,7 @@
 import React from "react";
 // var foodComponent = require("./foodComponent");
 
-export default class RecipeComponent extends React.Component {
+export default class Recipe extends React.Component {
 	constructor(){
         super();
     }

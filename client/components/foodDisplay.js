@@ -2,9 +2,7 @@
 import React from "react";
 import FoodComponent from "./foodComponent.js";
  export default class FoodDisplay extends React.Component {
-    constructor(){
-        super();
-    }
+    
   
     render(){
 		return(
