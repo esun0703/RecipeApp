@@ -160,5 +160,13 @@ hr{
 	height:650px;
 	overflow:scroll;
 }
+.results {
+	background-color:#eaeaea;
+	padding-top:20px;
+	padding-left:15px;
+	margin:0;
+	height:650px;
+	overflow:scroll;
+}
 
 

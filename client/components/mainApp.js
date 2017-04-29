@@ -6,9 +6,7 @@ import NavBar from "./navbar.js"
 
 
  class MainApp extends React.Component {
-    constructor(){
-        super();    
-    }
+
     render(){
         return(
             <div className="container">
@@ -18,9 +16,9 @@ import NavBar from "./navbar.js"
                       <div className="col-md-4">
                             <FoodDisplay/>
                         </div>
-                        <div className="col-md-8">
-                            <ResultComponent/>
-                        </div>
+                        <div className="col-md-8 results">
+                            {this.props.children}                  
+                            </div>
                     </div>
                 </div>
             </div>
