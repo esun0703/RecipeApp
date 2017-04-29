@@ -6,12 +6,14 @@ var AppID = "0dce280a";
 
 
 // These variables will hold the results we get from the user's inputs via HTML
-var searchTerm = "";
+var searchTerm = $("#search-term").val().trim();
 var numResults = 0;
 
 // queryURLBase is the start of our API endpoint. The searchTerm will be appended to this when
 // the user hits the search button
-var queryURLBase = "http://api.yummly.com/v1/api/recipes?_app_id=0dce280a&_app_key=9c9bb07049e77a49e5539ef78a5b18b6&q=" + //term goes heres // + "&requirePictures=true"
+var queryURLBase = "http://api.yummly.com/v1/api/recipes?_app_id=0dce280a&_app_key=9c9bb07049e77a49e5539ef78a5b18b6&q=" + searchTerm + "&requirePictures=true";
+
+console.log(searchTerm);
 
 
     //OG URL:  http://api.yummly.com/v1/api/recipes?_app_id=app-id&_app_key=app-key&your _search_parameters
@@ -130,6 +132,7 @@ var queryURLBase = "http://api.yummly.com/v1/api/recipes?_app_id=0dce280a&_app_k
 
             // Grabbing text the user typed into the search input
             searchTerm = $("#search-term").val().trim();
+
             var queryURL = queryURLBase + searchTerm;
 
 
@@ -148,4 +151,4 @@ var queryURLBase = "http://api.yummly.com/v1/api/recipes?_app_id=0dce280a&_app_k
             recipeCounter = 0;
             $("#well-section").empty();
         });
-}
+    }
