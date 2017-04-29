@@ -1,7 +1,7 @@
 // var React = require("react");
 import React from "react";
 import FoodDisplay from "./foodDisplay";
-import ResultComponent from "./resultComponent.js" 
+// import ResultComponent from "./resultComponent.js" 
 import NavBar from "./navbar.js"
 
 

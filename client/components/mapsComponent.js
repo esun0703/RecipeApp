@@ -2,9 +2,22 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 
-export default class Map extends React.Component {
-  constructor() {
-    super();    
+export default class Maps extends React.Component {
+  
+  constructor(){
+      super();
+      this.state={
+        lat: 48.858608,
+        lon:2.294471
+      }
+  }
+  
+  updateLocation() { 
+      //todo
+      this.setState({
+        lat: 43.6426,
+        lon: -79.3871
+      })
   }
   
   componentDidUpdate() {
