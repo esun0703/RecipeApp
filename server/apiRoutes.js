@@ -1,18 +1,42 @@
+
 var request = require("request");
 
+
 var express = require("express");
+var request = require("request");
+var mongojs = require("mongojs");
+var path = require("path");
+
+var databaseUrl = "mongodb://yumcache:yumcache@ds151917.mlab.com:51917/heroku_wdkfp391";
+var collections = ["foods"];
+
+var db = mongojs(databaseUrl, collections);
+
+
+
+db.on("error", function(error){
+	console.log("Database Error:", error);
+});
+
 module.exports = function(app) {
+
+
+	app.get("/", function(req, res){
+		res.sendFile(path.join(__dirname, "../public/index.html"))
+	});
+
 
 
 	//endpoint to return a list of the user's foods with the xpiration date
 	app.get('/userfoods', function(req, res) {
+		
+		app.get("/", function(req, res){
+			res.sendFile(path.join(__dirname, "../public/foods.html"))
+		});
+
 		//todo find the users foods
 		res.send([]);
 	})
-
-
-
-
 
 
 
@@ -33,6 +57,8 @@ module.exports = function(app) {
 	});
 
 	app.get("/search", function(req,res) {
+
+		res.sendFile(path.join(__dirname,"../public/maps.html"))
 
 		//todo save the serach query to the user
 
