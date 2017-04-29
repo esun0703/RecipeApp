@@ -70,7 +70,16 @@ module.exports = function(app) {
 		});
 	});
 
+<<<<<<< HEAD
+app.get("/maps", function(req,res){
+
+		// request("https://maps.googleapis.com/maps/api/geocode/json?address=" + req.&key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU")
+
+})
+
+=======
 	
+>>>>>>> 7e2f6ad168716e73b4329f9184f69be65b09fefa
 
 
 }
