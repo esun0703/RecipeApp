@@ -16,13 +16,19 @@
     "babel-preset-react": "^6.24.1",
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "google-map-react": "^0.24.0",
     "mongo": "^0.1.0",
     "mongodb": "^2.2.26",
     "mongojs": "^2.4.0",
     "path": "^0.12.7",
     "react": "^15.5.4",
+    "react-display-name": "^0.2.0",
     "react-dom": "^15.5.4",
+<<<<<<< HEAD
     "react-router": "3",
+=======
+    "react-google-maps": "^6.3.0",
+>>>>>>> master
     "request": "^2.81.0",
     "webpack": "^2.4.1"
   }
