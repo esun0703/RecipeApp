@@ -1,23 +1,23 @@
 // var React = require("react");
 import React from "react";
-import RecipeComponent from "./recipeComponent"
-// var foodComponent = require("./foodComponent");
+import Recipe from "./single"
 
-export default class ResultComponent extends React.Component {
+
+export default class RecipeList extends React.Component {
 	constructor(){
         super();
 
-this.state={
+	this.state={
 	//el is each element in the array. 
 	recipes: Array(12).fill(0).map((el, id)=>({name: id, id}))
 }
     }
 	render(){
 		return(
-			<div className="row" id="recipeDisplay">
+			<div  id="recipeDisplay">
 				{this.state.recipes.map((r, idx)=> 
 				<div className="col-md-4" key={idx}>
-					<RecipeComponent recipe={r}/>
+					<Recipe recipe={r}/>
 				</div>)}
 			</div>
 		)
