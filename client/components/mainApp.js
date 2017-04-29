@@ -18,7 +18,7 @@ import NavBar from "./navbar.js"
                         </div>
                         <div className="col-md-8 results">
                             {this.props.children}                  
-                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
