@@ -10,6 +10,7 @@ var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
 var mongo = require('mongodb');
 var mongoose = require('mongoose');
+var expressValidator = require('express-validator');
 
 ////////The Mongoose.connect should link to franco's heroku mlab link
 mongoose.connect('mongodb://localhost/userfoods');

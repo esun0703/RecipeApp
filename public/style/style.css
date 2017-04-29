@@ -130,12 +130,7 @@ hr{
 	clear:both;
 	width:100%;
 	margin-left:0;
-	/*margin-left:10px;*/
-	/*margin-top:10px;*/
-<<<<<<< HEAD
-=======
 	padding-top:0;
->>>>>>> 65ffaa92ca6e1e8a2051bb0d5d450b2dfb14ac47
 	height:100px;
 	background-color:#ffffff;
 }
@@ -147,22 +142,7 @@ hr{
 	/*margin-left:10px;*/
 	width:100%;
 }
-
-.recipe{
-	height:200px;
-	margin-right:10px;
-	margin-bottom:20px;
-	background-color:#ffffff;
-}
-
-#recipeDisplay {
-	background-color:#eaeaea;
-	padding-top:20px;
-	padding-left:15px;
-	margin:0;
-	height:650px;
-	overflow:scroll;
-}
+/*Results Main Component*/
 .results {
 	background-color:#eaeaea;
 	padding-top:20px;
@@ -170,6 +150,24 @@ hr{
 	margin:0;
 	height:650px;
 	overflow:scroll;
+}
+
+/*Recipes Components*/
+.recipe{
+	height:200px;
+	margin-right:10px;
+	margin-bottom:20px;
+	background-color:#ffffff;
+}
+
+
+#choiceDisplay{
+	text-align:center;
+}
+
+#choiceDisplay button{
+	margin-top:40px;
+	width:40%;
 }
 
 
