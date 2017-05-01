@@ -23,5 +23,3 @@ yummly.search({
   }
 });
 
-
-console.log(search);
