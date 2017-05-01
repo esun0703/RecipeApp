@@ -17,6 +17,7 @@ import FoodComponent from "./foodComponent.js";
 				</div>
 				<input id="foodInput" type="text" placeholder="Food Input"/>
 				<button id="submitBtn">Submit</button>
+				
 			</div>
 		)	
     }
