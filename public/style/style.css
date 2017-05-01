@@ -4,7 +4,7 @@ body, html {
 	margin:0;
 	padding:0;
 	font-family: 'Didact Gothic', sans-serif;
-	color:#7ac8cb;
+	color:black;
 }
 
 .container{
@@ -38,7 +38,7 @@ hr{
    background-color: transparent;
    background: transparent;
    border-color: transparent;
-   border-bottom:2px solid #7ac8cb;
+   border-bottom:2px solid #afdb51;
    padding-right:10px;
    
 }
@@ -67,7 +67,7 @@ hr{
 
 #side {	
 	height:650px;
-	background-color:#dddddd;
+	background-color:#afdb51;
 	margin-left:70px;
 	padding-left:10px;
 	padding-top:10px;
@@ -138,18 +138,38 @@ hr{
 #submitBtn{
 	color:#ffffff;
 	border:none;
-	background-color:#7ac8cb;
+	background-color:black;
 	/*margin-left:10px;*/
 	width:100%;
 }
 /*Results Main Component*/
 .results {
-	background-color:#eaeaea;
+	background-color:#4f4f4f;
 	padding-top:20px;
+	padding-bottom:20px;
 	padding-left:15px;
-	margin:0;
 	height:650px;
 	overflow:scroll;
+}
+
+#loginBackground {
+	width:100%;
+	height:80%;
+}
+
+/*Choices Components*/
+#choiceDisplay{
+	text-align:center;
+	color:#afdb51;
+}
+
+#choiceDisplay button{
+	margin-top:40px;
+	width:40%;
+	background-color:#afdb51;
+	color:black;
+	border:none;
+	margin-right:5px;
 }
 
 /*Recipes Components*/
@@ -157,17 +177,17 @@ hr{
 	height:200px;
 	margin-right:10px;
 	margin-bottom:20px;
-	background-color:#ffffff;
+	background-color:#e4fcb0;
 }
 
-
-#choiceDisplay{
+/*map component*/
+#mapDisplay{
 	text-align:center;
 }
 
-#choiceDisplay button{
-	margin-top:40px;
-	width:40%;
+#mymap{
+	width:80%;
+
 }
 
 
