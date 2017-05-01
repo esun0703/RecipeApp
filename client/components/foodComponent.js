@@ -2,9 +2,7 @@ import React from "react";
 
 export default class FoodComponent extends React.Component{
 
-	constructor(){
-		super();
-	}
+	
 	render(){
 		return(
 			// const {name,expiration}=this.props??

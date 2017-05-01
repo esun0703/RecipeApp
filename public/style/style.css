@@ -130,8 +130,6 @@ hr{
 	clear:both;
 	width:100%;
 	margin-left:0;
-	/*margin-left:10px;*/
-	/*margin-top:10px;*/
 	padding-top:0;
 	height:100px;
 	background-color:#ffffff;
@@ -144,7 +142,17 @@ hr{
 	/*margin-left:10px;*/
 	width:100%;
 }
+/*Results Main Component*/
+.results {
+	background-color:#eaeaea;
+	padding-top:20px;
+	padding-left:15px;
+	margin:0;
+	height:650px;
+	overflow:scroll;
+}
 
+/*Recipes Components*/
 .recipe{
 	height:200px;
 	margin-right:10px;
@@ -152,13 +160,14 @@ hr{
 	background-color:#ffffff;
 }
 
-#recipeDisplay {
-	background-color:#eaeaea;
-	padding-top:20px;
-	padding-left:15px;
-	margin:0;
-	height:650px;
-	overflow:scroll;
+
+#choiceDisplay{
+	text-align:center;
+}
+
+#choiceDisplay button{
+	margin-top:40px;
+	width:40%;
 }
 
 
