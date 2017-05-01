@@ -9,7 +9,8 @@ export default class Recipe extends React.Component {
 	render(){
 		return(
 				<div className="recipe">
-					Recipe
+					<h6>Recipe Example</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 				</div>
 		)
 	}
