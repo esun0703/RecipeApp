@@ -28,7 +28,7 @@ module.exports = function(app) {
 		res.sendFile(path.join(__dirname, "../public/index.html"))
 
 	});
-
+});
 
 
 	//endpoint to return a list of the user's foods with the xpiration date
@@ -108,8 +108,6 @@ app.get("/maps", function(req,res){
 		// request("https://maps.googleapis.com/maps/api/geocode/json?address=" + req.&key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU")
 
 })
-
-
 
 }
 
