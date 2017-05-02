@@ -6,6 +6,7 @@ var express = require("express");
 var request = require("request");
 var mongojs = require("mongojs");
 var path = require("path");
+var logger = require("morgan");
 
 var databaseUrl = "mongodb://yumcache:yumcache@ds151917.mlab.com:51917/heroku_wdkfp391";
 var collections = ["foods"];
@@ -20,23 +21,55 @@ db.on("error", function(error){
 
 module.exports = function(app) {
 
+	app.get('/', function(req, res){
+		res.sendFile(path.join(__dirname, '../public/index.html'))
 
 	app.get("/", function(req, res){
 		res.sendFile(path.join(__dirname, "../public/index.html"))
+
 	});
 
 
 
 	//endpoint to return a list of the user's foods with the xpiration date
-	app.get('/userfoods', function(req, res) {
+	// app.get('/userfoods', function(req, res) {
 		
-		app.get("/", function(req, res){
-			res.sendFile(path.join(__dirname, "../public/foods.html"))
-		});
+	// res.sendFile(path.join(__dirname, "../public/foods.html"))
 
-		//todo find the users foods
-		res.send([]);
-	})
+	// 	//todo find the users foods
+	// 	// res.send([]);
+	// });
+
+	app.post('/userfoods', function(req,res){
+
+	// res.sendFile(path.join(__dirname, "../public/foodlist.html"))
+
+		var food = req.body;
+
+		food.done = false;
+
+		db.foods.save(food, function(error, saved){
+			if (error){
+				console.log(error);
+			} else {
+				res.send(saved);
+			}
+		});
+	});
+
+app.get("/all", function(req, res) {
+  
+  // res.sendFile(path.join(__dirname, "../public/foodlist.html"))
+
+  db.foods.find({}, function(error, found) {
+    if (error) {
+      console.log(error);
+    }
+    else {
+      res.json(found);
+    }
+  });
+});
 
 
 

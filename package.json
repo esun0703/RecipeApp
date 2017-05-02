@@ -19,6 +19,7 @@
     "cookie-parser": "^1.4.3",
     "debug": "^2.6.6",
     "express": "^4.15.2",
+    "logger": "0.0.1",
     "express-session": "^1.15.2",
     "express-validator": "^3.2.0",
     "google-map-react": "^0.24.0",
