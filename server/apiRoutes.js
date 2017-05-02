@@ -21,14 +21,11 @@ db.on("error", function(error){
 
 module.exports = function(app) {
 
-<<<<<<< HEAD
 	app.get('/', function(req, res){
 		res.sendFile(path.join(__dirname, '../public/index.html'))
-=======
 
 	app.get("/", function(req, res){
 		res.sendFile(path.join(__dirname, "../public/index.html"))
->>>>>>> 720353fb26e0094c66b9a3f885dcfd7a118c4f3d
 	});
 
 
@@ -112,7 +109,7 @@ app.get("/maps", function(req,res){
 })
 
 
-
+}
 
 }
 

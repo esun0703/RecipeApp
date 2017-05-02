@@ -18,13 +18,10 @@
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
     "express": "^4.15.2",
-<<<<<<< HEAD
     "logger": "0.0.1",
-=======
     "express-session": "^1.15.2",
     "express-validator": "^3.2.0",
     "google-map-react": "^0.24.0",
->>>>>>> 720353fb26e0094c66b9a3f885dcfd7a118c4f3d
     "mongo": "^0.1.0",
     "mongoose": "^4.9.6",
     "mongodb": "^2.2.26",
