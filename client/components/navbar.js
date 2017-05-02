@@ -2,7 +2,13 @@ import React from "react";
  export default class NavBar extends React.Component {
     constructor(){
         super();
+
     }
+
+    handleClick() {
+	  // this.props.history.push('/some/path');
+	  console.log("hello")
+	}
   
     render(){
 		return(
