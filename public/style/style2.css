@@ -2,13 +2,21 @@
    background-color: transparent;
    background: transparent;
    border-color: transparent;
-   border-bottom:2px solid #8bb640;
-   padding-right:10px;
-   
+   border-bottom:3px solid #8bb640;
+   padding-right:10px;   
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+	padding-right: 17px;
+	font-size: 15px;
 }
 
 .mainlogo{
-	width: 20%;
+	/*width: 20%;*/
 	display: block;
 	margin: auto;
 	padding-top: 10px;
@@ -60,13 +68,14 @@
 }
 
 .footer{
+/*	clear: both;*/
 	width: 100%;
 	height: 56px;
 	background: black;
 	color: white;
 	text-align: center;
 	letter-spacing: 5px;
-	padding-top: 32px;
+	padding-top: 35px;
 	font-size: 13px;
 /*	position: absolute;*/
 	bottom: 0px;
@@ -75,7 +84,7 @@
 
 
 #bottom{
-	padding-top: 22px;
+	padding-top: 15px;
 	letter-spacing: 1.5px;
 	border-width: thin;
 	color: #808080;
