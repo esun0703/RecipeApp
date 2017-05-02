@@ -5,11 +5,13 @@ import React from "react";
 export default class Recipe extends React.Component {
 	constructor(){
         super();
+
     }
 	render(){
 		return(
 				<div className="recipe">
-					Recipe
+					<h6>{this.props.recipeName}</h6>
+					<p>{this.props.recipeDescription}</p>
 				</div>
 		)
 	}
