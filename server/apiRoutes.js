@@ -58,7 +58,7 @@ module.exports = function(app) {
 
 	app.get("/search", function(req,res) {
 
-		res.sendFile(path.join(__dirname,"../public/maps.html"))
+		res.sendFile(path.join(__dirname,"../public/testing.html"))
 
 		//todo save the serach query to the user
 
