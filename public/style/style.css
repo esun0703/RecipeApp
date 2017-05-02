@@ -174,10 +174,19 @@ hr{
 
 /*Recipes Components*/
 .recipe{
+	padding-top:5px;
+	padding-left:8px;
+	padding-right:8px;
 	height:200px;
 	margin-right:10px;
 	margin-bottom:20px;
 	background-color:#e4fcb0;
+	text-align:justify;
+}
+
+.recipe h6{
+	text-align:center;
+	line-height:18px;
 }
 
 /*map component*/

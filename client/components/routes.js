@@ -21,7 +21,6 @@ const routes =()=>(
 	  </Route>
 	  <IndexRoute component={SplashImage}/>
     </Route>
-
   </Router>
 )
 
