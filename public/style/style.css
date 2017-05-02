@@ -181,12 +181,23 @@ hr{
 	margin-right:10px;
 	margin-bottom:20px;
 	background-color:#e4fcb0;
-	text-align:justify;
+	text-align:center;
 }
 
 .recipe h6{
 	text-align:center;
 	line-height:18px;
+	font-size:13px;
+}
+
+.recipeImg{
+	width:120px;
+	height:120px;
+}
+
+.recipeLnk{
+	font-size:10px;
+	font-weight:bold;
 }
 
 /*map component*/
