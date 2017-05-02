@@ -110,7 +110,7 @@ app.get("/maps", function(req,res){
 })
 
 
-}
+});
 
 }
 
