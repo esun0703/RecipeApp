@@ -21,16 +21,6 @@ db.on("error", function(error){
 
 module.exports = function(app) {
 
-	app.get('/', function(req, res){
-		res.sendFile(path.join(__dirname, '../public/index.html'))
-
-	app.get("/", function(req, res){
-		res.sendFile(path.join(__dirname, "../public/index.html"))
-
-	});
-});
-
-
 	//endpoint to return a list of the user's foods with the xpiration date
 	// app.get('/userfoods', function(req, res) {
 		
@@ -91,7 +81,6 @@ app.get("/all", function(req, res) {
 
 	app.get("/search", function(req,res) {
 
-		res.sendFile(path.join(__dirname,"../public/testing.html"))
 
 		//todo save the serach query to the user
 
@@ -108,6 +97,18 @@ app.get("/maps", function(req,res){
 		// request("https://maps.googleapis.com/maps/api/geocode/json?address=" + req.&key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU")
 
 })
+
+//adding food route to api router
+app.get('/foods', function(req, res){
+  Food.find(function(err,foods){
+    if (err) res.send(err);
+    res.json(foods)
+  });
+});
+
+
+
+
 
 }
 

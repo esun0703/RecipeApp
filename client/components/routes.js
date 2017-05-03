@@ -4,7 +4,7 @@ import { Router, Route, IndexRoute, Link, hashHistory } from 'react-router'
 
 import Main from "./mainApp";
 import {RecipeList, Recipe} from "./recipe"
-import Maps from "./mapsComponent.js"
+import Maps from "./Donate/mapsComponent.js"
 import Choices from "./choices.js"
 import SplashImage from "./splashImage.js"
 
