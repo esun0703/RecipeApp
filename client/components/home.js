@@ -32,8 +32,8 @@ import Footer from "./footer.js"
 		            <div className="row">  
 		                <div className="col-md-6 leftIndent">
 		                    <h2>YumCache</h2>
-		                    <p>text here</p>
-		                    <a className="btn" href="./index.html"><span>VIEW MENU</span></a>
+		                    <p>Don't let your delicious food go bad. Keep track of your food expiration dates and see when it's time to create something beautiful.</p>
+		                     <a className="btn homeBtn" href="#/app"><span>VIEW INGREDIENTS</span></a>
 		                </div>
 		                <div className="col-md-6 boardImage">
 		                    <img className="mainPic" src="./style/main-p1.jpg"/>
@@ -45,13 +45,15 @@ import Footer from "./footer.js"
 		                </div> 
 		                <div className="col-md-6">
 		                    <h2>YumCache</h2>
-		                    <p>text here</p>
+		                    <p>Cook with what you have! Enter ingredients and search from thousands of recipes. Let's make something delicious!</p>
+		                    <a className="btn homeBtn yellowBtn" href="#/app/recipes"><span>VIEW MENU</span></a>
 		                </div>
 		            </div>
 		            <div className="row">
 		                <div className="col-md-6 leftIndent">
 		                    <h2>YumCache</h2>
-		                    <p>text here</p>
+		                    <p>Can't find a great dish with an ingredient? No problem.. that food can still do some good. Find local charities to give food items to.</p>
+		                    <a className="btn homeBtn greenBtn" href="#/app/map"><span>DONATE</span></a>
 		                </div>
 		                <div className="col-md-6">
 		                    <img className="mainPic" src="./style/main-p3.jpg"/>
