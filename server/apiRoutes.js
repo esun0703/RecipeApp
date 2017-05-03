@@ -26,10 +26,6 @@ module.exports = function(app) {
 // 	app.get("/", function(req, res){
 // 		res.sendFile(path.join(__dirname, "../public/index.html"))
 
-// 	});
-
-
-
 	//endpoint to return a list of the user's foods with the xpiration date
 	// app.get('/userfoods', function(req, res) {
 		
@@ -90,7 +86,6 @@ app.get("/all", function(req, res) {
 
 	app.get("/search", function(req,res) {
 
-		res.sendFile(path.join(__dirname,"../public/maps.html"))
 
 		//todo save the serach query to the user
 
@@ -107,7 +102,6 @@ app.get("/all", function(req, res) {
 // 		// request("https://maps.googleapis.com/maps/api/geocode/json?address=" + req.&key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU")
 
 // })
-
 
 
 
