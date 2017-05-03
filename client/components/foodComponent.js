@@ -17,7 +17,7 @@ export default class FoodComponent extends React.Component{
 			// const {name,expiration}=this.props??
 			<div className="row">
 				<div className="foods" onClick={this.handleChoiceRedirect.bind(this)}>
-					<span className="foodName">{this.props.food.name}</span>
+					<span className="foodName">{this.props.food.food_name}</span>
 					<span className="expirationDate">{this.props.food.shelf_life}</span>
 				</div>
 			</div>

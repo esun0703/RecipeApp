@@ -22,7 +22,8 @@ module.exports = {
           // These are the specific transformations we'll be using.
           presets: ["react", "es2015"]
         }
-      }
+      },
+      { test: /\.(png|jpg|gif)$/, loader: 'file-loader' },
     ]
   },
   // This lets us debug our react code in chrome dev tools. Errors will have lines and file names

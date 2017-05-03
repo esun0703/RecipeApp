@@ -106,14 +106,17 @@ li{
 }
 
 #sideTitle{
-	background-color:#ffffff;
+	background-color:#353534;
 	height:90px;
 	margin:0;
 	padding-right:5px;
 	padding-top:10px;
 	padding-left:10px;
 	line-height: 0px;
+	color:#90d300;
+	margin-bottom:10px;
 }
+
 
 /*Food Component*/
 /*===========================================*/
@@ -135,12 +138,17 @@ li{
 	padding-left:10px;
 	background-color:#ffffff;
 	border-top:2px solid #e4fcb0;
+	border-right:2px solid #e4fcb0;
+	border-left:2px solid #e4fcb0;
+	border-radius:2%;
 	border-bottom:none;
 	font-size:14px;
 	font-weight:bold;
 	overflow:scroll;
 	
 }
+
+
 
 .foodName{
 	float:left;
@@ -160,7 +168,19 @@ li{
 	background-color:#ffffff;
 }
 
+.form-group{
+	margin:0;
+}
+
+.formInput{
+	float:left;
+	width:50%;
+	height:50px;
+	padding:5px;
+}
+
 #submitBtn{
+	clear:both;
 	color:#ffffff;
 	border:none;
 	background-color:black;
