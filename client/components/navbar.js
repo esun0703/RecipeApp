@@ -16,7 +16,7 @@ import React from "react";
 				<nav className="navbar navbar-inverse">
 		            <div className="container-fluid">
 		                <ul className="nav navbar-nav navbar-left">
-		                    <li><a className="navLink" href="#/app">Main</a></li>
+		                    <li><a className="navLink" href="#/app">Ingredient List</a></li>
 		                    <li><a className="navLink" href="#/app/recipes">Recipe</a></li>
 		                    <li><a className="navLink" href="#/app/map">Donation</a></li>                    
 		                </ul>

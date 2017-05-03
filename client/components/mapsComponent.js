@@ -89,7 +89,7 @@ export default class Maps extends React.Component {
         <h1>DONATE</h1>
         <div id="donateIntroRow" className="row">
           <div className="col-md-6">
-            <img id="mapIntroImg" src="../public/style/main-p3.jpg"/>
+            <img id="mapIntroImg" src="style/main-p3.jpg"/>
           </div>
           <div id="donateDescription" className="col-md-6">
             <h3>How To Donate</h3>
@@ -99,7 +99,7 @@ export default class Maps extends React.Component {
           </div>
         </div>
         <div id="mapSearchRow" className="row">
-          <input type="text" className="form-control" aria-label="..." id="input" id="mapSearch" value={this.state.input} onChange={this.handleChange.bind(this)} required/>
+          <input type="text" className="form-control" aria-label="..." id="input" id="mapSearch" placeholder="Search Places" value={this.state.input} onChange={this.handleChange.bind(this)} required/>
           <button id="mapBtn" onClick={this.handleClick.bind(this)}>Search</button>
         </div>
         <h1>Nearby Food Pantries</h1>

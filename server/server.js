@@ -39,7 +39,8 @@ app.use(bodyParser.text({type: 'text/html'}))
 
 
 // Set Static Folder
-app.use(express.static(path.join(__dirname, 'public')));
+console.log('static folder', path.join(__dirname, 'public'));
+app.use(express.static('./public'));
 
 //Routes
 require("./apiRoutes.js")(app);
@@ -75,6 +76,7 @@ app.use(expressValidator({
 
 // Connect Flash
 app.use(flash());
+
 // Global Vars
 app.use(function (req, res, next) {
   res.locals.success_msg = req.flash('success_msg');
