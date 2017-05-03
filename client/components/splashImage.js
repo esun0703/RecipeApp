@@ -7,7 +7,7 @@ export default class SplashImage extends React.Component{
 		return(
 			// const {name,expiration}=this.props??
 			<div id="splashImage">
-				<img id="loginBackground" src="../public/style/login-background.jpg"/>
+				<img id="loginBackground" src="style/login-background.jpg"/>
 			</div>
 		)
 	}
