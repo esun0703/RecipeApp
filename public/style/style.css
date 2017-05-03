@@ -31,6 +31,12 @@ hr{
 }
 
 
+
+.contentDisplay{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
 /*Main page - website components*/
 .navbar {
    background-color: transparent;
@@ -92,6 +98,7 @@ li{
 .navbar ul{
 	color:#7ac8cb;
 }
+
 
 
 #navImg{

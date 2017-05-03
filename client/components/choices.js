@@ -9,10 +9,10 @@ export default class Choices extends React.Component {
 		window.location = target
 	}
 	handleMapRedirect() {
-		this.handleRedirect('#/map')
+		this.handleRedirect('#/app/map')
 	}
 	handleRecipesRedirect() {
-		this.handleRedirect('#/recipes')
+		this.handleRedirect('#/app/recipes')
 	}
 	render() {
 		return(

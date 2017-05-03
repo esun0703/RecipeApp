@@ -16,11 +16,11 @@ import React from "react";
 				<nav className="navbar navbar-inverse">
 		            <div className="container-fluid">
 		                <ul className="nav navbar-nav navbar-left">
-		                    <li><a href="#">Main</a></li>
-		                    <li><a href="#">Recipe</a></li>
-		                    <li><a href="#">Donation</a></li>                    
+		                    <li><a href="#/app">Main</a></li>
+		                    <li><a href="#/app/recipes">Recipe</a></li>
+		                    <li><a href="#/app/map">Donation</a></li>                    
 		                </ul>
-		                <a href="./main.html">
+		                <a href="#/">
 		                    <img className="mainlogo" src="./style/mainLogo.jpg"/>
 		                </a>
 		                <ul className="nav navbar-nav navbar-right">
