@@ -88,7 +88,7 @@ export default class RecipeList extends React.Component {
 		return(
 			<div  id="recipeDisplay">
 				{this.state.recipes.map((r, idx)=> 
-				<div className="col-md-4" key={idx}>
+				<div className="col-md-4 recipeMd4" key={idx}>
 					<Recipe recipeName={r.Recipe} recipeImage={r.Image} recipeLink={r.Link}/>
 				</div>)}
 			</div>

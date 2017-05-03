@@ -58,6 +58,7 @@ export default class Maps extends React.Component {
    	
     return (
       <div id="mapDisplay">
+        <h1>DONATE</h1>
         <div id="donateIntroRow" className="row">
           <div className="col-md-6">
             <img id="mapIntroImg" src="../public/style/main-p3.jpg"/>

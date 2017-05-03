@@ -84,16 +84,7 @@ li{
 	color: #808080;
 	font-size: 10px;
 }
-/*Main page -end */
 
-/*.navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-   border-bottom:2px solid #afdb51;
-   padding-right:10px;
-}
-*/
 .container-fluid{
 	position:relative;
 }
@@ -159,8 +150,7 @@ li{
 	font-size:14px;
 	font-weight:bold;
 	overflow:scroll;
-	/*background-color:;*/
-	/*border-bottom:2px solid #dddddd;*/
+	
 }
 
 .foodName{
@@ -190,8 +180,8 @@ li{
 /*Results Main Component*/
 .results {
 	width:65%;
-	background-color:#e8e8e8;
-	/*background-color:#4f4f4f;*/
+	/*background-color:#f7f0b9;*/
+	background-color:#fcf9e3;
 	margin-right:20px;
 	padding-top:20px;
 	padding-bottom:20px;
@@ -214,19 +204,25 @@ li{
 #choiceDisplay button{
 	margin-top:40px;
 	width:40%;
-	background-color:#afdb51;
 	color:black;
 	border:none;
+	border-radius:0;
 	margin-right:5px;
 }
 
+#donateBtn{
+	background-color:#afdb51;
+}
+
+#recipeBtn{
+	background-color:#e4fcb0;
+}
+
+	
+
+
 /*Recipes Components*/
 
-.recipeMd4{
-	margin:0;
-	padding:0;
-	width:100%;
-}
 .recipe{
 	/*padding-top:5px;
 	padding-left:8px;
