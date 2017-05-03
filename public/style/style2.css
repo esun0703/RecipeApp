@@ -13,28 +13,101 @@ ul{
 }
 
 li{
-	padding-right: 17px;
+	padding-right:0px;
 	font-size: 14px;
 }
 
+.navbar-inverse .navbar-nav>li>a {
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 12px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #8bb640;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: large;
+}
+
+.logo-link{
+	text-align: -webkit-center;
+
+}
 .mainlogo{
 	display: block;
 	padding-top: 10px;
-	height: 35px;
+	height: 45px;
+}
+
+.signupicon{
+	float: right;
+	margin-top: 15px;
+	padding-bottom: 0;
+	margin-right: 10px;
 }
 
 .smallyum{
 	width: 25px;
 	padding-bottom: 5px;
+	margin-right: 10px;
 }
 
+.signupMain:focus, .signupMain:hover {
+    color: black;
+/*    text-decoration: underline;*/
+/*    text-decoration-color: #8bb640;*/
+    font-size: medium;
+}
+
+a:hover{
+	color: black;
+    text-decoration-color: #8bb640;
+}
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: medium;
+}
+
+
+
+/*main door - image*/
 .mainPic{
 	width: 100%;
 }
 
-
 .marketing{
-	padding-top: 30px;
+	padding-top: 90px;
+	vertical-align: middle;
+}
+
+.writing{
+	padding-top: 10px;
+	font-size: 17px;
+}
+
+.btn.mBtn{
+	background-color: #8bb640;
+	color: white;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	margin-right: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+#yellow{
+	background-color: #f7dd29;
+	color: black;
+}
+
+.insideBox{
+	padding-top: 20px;
+	padding-left: 25px;
 }
 
 .row.boardground{
@@ -42,7 +115,6 @@ li{
 	margin: 0px 30px 80px 30px;
 	flex: 0 0 50%;
 	position: relative;
-
 }
 
 .btn{
@@ -55,7 +127,6 @@ li{
 	font-weight: 100;
 }
 
-
 .footer{
 	width: 100%;
 	height: 56px;
@@ -63,7 +134,7 @@ li{
 	color: white;
 	text-align: center;
 	letter-spacing: 5px;
-	padding-top: 35px;
+	padding-top: 32px;
 	font-size: 13px;
 	bottom: 0px;
 	border-width: bolder;
@@ -78,5 +149,14 @@ li{
 	letter-spacing: 1.5px;
 	border-width: thin;
 	color: #808080;
-	font-size: 10px;
+	font-size: 11px;
+}
+
+.ftcol{
+	color: white;
+}
+
+.ftcol:hover{
+	color: #f7dd29;
+	text-decoration: none;
 }
