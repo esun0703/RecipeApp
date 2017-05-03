@@ -5,10 +5,10 @@ import React from "react";
 
     }
 
-    handleClick() {
-	  // this.props.history.push('/some/path');
-	  console.log("hello")
-	}
+ //    handleClick() {
+	//   // this.props.history.push('/some/path');
+	//   console.log("hello")
+	// }
   
     render(){
 		return(

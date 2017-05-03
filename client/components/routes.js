@@ -11,8 +11,8 @@ import SplashImage from "./splashImage.js"
 const routes =()=>( 
  <Router history={hashHistory}>
     <Route path="/" component={Main}>
-	  <Route path="/choice" component={Choices}/>
-	  <Route path="/map" component={Maps}>
+	  <Route path="choice" component={Choices}/>
+	  <Route path="map" component={Maps}>
 	  	<IndexRoute component={Maps}/>
 	  </Route>
 	  <Route path="recipes" component={RecipeList} >
