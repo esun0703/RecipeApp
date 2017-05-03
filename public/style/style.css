@@ -14,6 +14,13 @@ body, html {
 	padding:0;
 }
 
+.container-fluid{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
+
 
 .row{
 	width:100%;
@@ -38,13 +45,15 @@ hr{
 }
 
 /*Main page - website components*/
+/*===========================================*/
 .navbar {
    background-color: transparent;
    background: transparent;
    border-color: transparent;
    border-bottom:3px solid #8bb640;
    padding-right:10px;   
-   margin-bottom: 0;
+   margin-bottom: 10px;
+   text-align:center;
 }
 
 ul{
@@ -56,6 +65,7 @@ li{
 	font-size: 14px;
 }
 
+
 .btn{
 	border: 0;
     background-color: black;
@@ -64,31 +74,6 @@ li{
 	text-transform: uppercase;
 	line-height: 70px;
 	font-weight: 100;
-}
-
-.footer{
-	width: 100%;
-	height: 56px;
-	background: black;
-	color: white;
-	text-align: center;
-	letter-spacing: 5px;
-	padding-top: 35px;
-	font-size: 13px;
-	bottom: 0px;
-	border-width: bolder;
-}
-
-.btmtext{
-	color: white;
-}
-
-#bottom{
-	padding-top: 15px;
-	letter-spacing: 1.5px;
-	border-width: thin;
-	color: #808080;
-	font-size: 10px;
 }
 
 .container-fluid{
@@ -100,22 +85,18 @@ li{
 }
 
 
-
-#navImg{
+.mainlogo{
 	position:absolute;
 	left:45%;
 	margin-top:10px;
 	width:13%;
 }
 
-.rightAlign{
-	text-align:right;
-}
-
+/*Side Bar*/
+/*===========================================*/
 #side {	
 	height:650px;
 	background-color:#afdb51;
-	/*margin-left:30px;*/
 	padding-left:10px;
 	padding-top:10px;
 	padding-right:10px;
@@ -134,11 +115,12 @@ li{
 	line-height: 0px;
 }
 
+/*Food Component*/
+/*===========================================*/
 #foodDisplay{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
-	/*width:100%;*/
 	background-color:#a5a5a5;
 	height:400px;
 	margin:0;
@@ -184,10 +166,12 @@ li{
 	background-color:black;
 	width:100%;
 }
+
+
 /*Results Main Component*/
+/*===========================================*/
 .results {
 	width:65%;
-	/*background-color:#f7f0b9;*/
 	background-color:#fcf9e3;
 	margin-right:20px;
 	padding-top:20px;
@@ -203,6 +187,7 @@ li{
 }
 
 /*Choices Components*/
+/*===========================================*/
 #choiceDisplay{
 	text-align:center;
 	color:#afdb51;
@@ -217,26 +202,22 @@ li{
 	margin-right:5px;
 }
 
-#donateBtn{
+.greenBtn{
 	background-color:#afdb51;
+	color:black;
 }
 
-#recipeBtn{
-	background-color:#e4fcb0;
+.yellowBtn{
+	background-color:#f9dd04;
+	color:black;
 }
-
-	
 
 
 /*Recipes Components*/
+/*===========================================*/
 
 .recipe{
-	/*padding-top:5px;
-	padding-left:8px;
-	padding-right:8px;
-	padding-bottom:5px;*/
 	height:200px;
-	/*margin-right:10px;*/
 	margin-bottom:10px;
 	background-color:#e4fcb0;
 	text-align:center;
@@ -250,7 +231,6 @@ li{
 
 .recipeImg{
 	width:100%;
-	/*height:120px*/
 	height:100%;
 }
 
@@ -260,8 +240,8 @@ li{
 }
 
 /*map component*/
+/*===========================================*/
 #donateIntroRow{
-	/*background-color:white;*/
 	margin-left:10px;
 	margin-bottom:20px;
 }
@@ -283,11 +263,11 @@ li{
 }
 
 #mapSearch{
-	width:80%;
+	width:100%;
 }
 
 #mapSearchRow{
-	text-align:center;
+	margin-left:10px;
 }
 
 #mapBtn{
@@ -297,8 +277,35 @@ li{
 
 #mymap{
 	margin-left:10px;
-	width:90%;
-	height:200px;
+	width:100%;
+	height:500px;
+}
+
+/*Footer*/
+/*===========================================*/
+.footer{
+	width: 100%;
+	height: 56px;
+	background: black;
+	color: white;
+	text-align: center;
+	letter-spacing: 5px;
+	padding-top: 35px;
+	font-size: 13px;
+	bottom: 0px;
+	border-width: bolder;
+}
+
+.btmtext{
+	color: white;
+}
+
+#bottom{
+	padding-top: 15px;
+	letter-spacing: 1.5px;
+	border-width: thin;
+	color: #808080;
+	font-size: 10px;
 }
 
 

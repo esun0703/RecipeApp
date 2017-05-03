@@ -1,3 +1,5 @@
+/*Home Page Content*/
+/*=============================*/
 .leftIndent{
 	padding-left:50px;
 }
@@ -5,37 +7,7 @@
 .rightIndent{
 	padding-right:50px;
 }
-.navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-   border-bottom:3px solid #8bb640;
-   padding-right:10px;   
-   margin-bottom: 10px;
-   text-align:center;
-}
 
-.container-fluid{
-	width:100%;
-	margin:0;
-	padding:0;
-}
-
-
-ul{
-  list-style-type: none;
-}
-
-li{
-	padding-right: 17px;
-	font-size: 14px;
-}
-
-.mainlogo{
-	padding-top: 10px;
-	height: 35px;
-	/*margin-right:150px;*/
-}
 
 .smallyum{
 	width: 25px;
@@ -52,36 +24,3 @@ li{
 }
 
 
-
-.btn{
-	border: 0;
-    background-color: black;
-	padding: 0 30px;
-    color: white;
-	text-transform: uppercase;
-	line-height: 70px;
-	font-weight: 100;
-}
-
-
-.footer{
-	width: 100%;
-	height: 56px;
-	background: black;
-	color: white;
-	text-align: center;
-	letter-spacing: 5px;
-	padding-top: 35px;
-	font-size: 13px;
-	bottom: 0px;
-	border-width: bolder;
-}
-
-
-#bottom{
-	padding-top: 15px;
-	letter-spacing: 1.5px;
-	border-width: thin;
-	color: #808080;
-	font-size: 10px;
-}
