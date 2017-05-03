@@ -20,14 +20,13 @@ db.on("error", function(error){
 });
 
 module.exports = function(app) {
+// 	app.get('/', function(req, res){
+// 		res.sendFile(path.join(__dirname, '../public/index.html'))
+// }
+// 	app.get("/", function(req, res){
+// 		res.sendFile(path.join(__dirname, "../public/index.html"))
 
-	app.get('/', function(req, res){
-		res.sendFile(path.join(__dirname, '../public/index.html'))
-
-	app.get("/", function(req, res){
-		res.sendFile(path.join(__dirname, "../public/index.html"))
-
-	});
+// 	});
 
 
 
@@ -103,13 +102,13 @@ app.get("/all", function(req, res) {
 		});
 	});
 
-app.get("/maps", function(req,res){
+// app.get("/maps", function(req,res){
 
-		// request("https://maps.googleapis.com/maps/api/geocode/json?address=" + req.&key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU")
+// 		// request("https://maps.googleapis.com/maps/api/geocode/json?address=" + req.&key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU")
 
-})
+// })
+
 
 
 
 }
-

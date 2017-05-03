@@ -182,6 +182,10 @@ li{
 	background-color:#ffffff;
 	border-top:2px solid #dddddd;
 	border-bottom:none;
+	font-size:10px;
+	overflow:scroll;
+	/*background-color:;*/
+	/*border-bottom:2px solid #dddddd;*/
 }
 
 .foodName{
@@ -267,12 +271,30 @@ li{
 }
 
 /*map component*/
+#donateIntroRow{
+	/*background-color:white;*/
+	margin-left:10px;
+}
+
+#donateDescription{
+	text-align:justify;
+}
+
+#mapIntroImg{
+	width:100%;
+}
+
 #mapDisplay{
 	text-align:center;
+	padding-right:20px;
+	padding-bottom:20px;
+	background-color:white;
 }
 
 #mymap{
-	width:80%;
+	margin-left:10px;
+	width:100%;
+
 
 }
 

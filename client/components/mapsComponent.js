@@ -58,6 +58,17 @@ export default class Maps extends React.Component {
    	
     return (
       <div id="mapDisplay">
+          <div id="donateIntroRow" className="row">
+            <div className="col-md-6">
+              <img id="mapIntroImg" src="../public/style/main-p3.jpg"/>
+            </div>
+            <div id="donateDescription" className="col-md-6">
+              <h3>How To Donate</h3>
+              <p>Search below for your local food pantry. We hope this way we can build a community that focuses on lessening food waste and also helping those in need. </p>
+              <br/>
+              <p>Every year, tons of food goes to waste when it can be donated to those in need. This food waste also contributes to many enviornmental issues due to the amount of methane gas produced. We hope by promoting donations this will not only help you keep a clean fridge, but also a clean community, and ultimately..a clean planet. </p>
+            </div>
+          </div>
         <h1>Nearby Food Pantries</h1>
         <div ref="map" id="mymap" style={mapStyle}>I should be a map!</div>
       </div>
