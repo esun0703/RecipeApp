@@ -17,7 +17,7 @@ import Footer from "./footer.js"
         			</div>
 
 			        <div className="row">
-			            <div className="col-md-6">
+			            <div className="col-md-6 mainImgCol">
 			                <img className="mainPic" src="./style/main-go.jpg"/>  
 			            </div>
 			            <div className="col-md-6 marketing rightIndent">    
@@ -35,12 +35,12 @@ import Footer from "./footer.js"
 		                    <p>Don't let your delicious food go bad. Keep track of your food expiration dates and see when it's time to create something beautiful.</p>
 		                     <a className="btn homeBtn" href="#/app"><span>VIEW INGREDIENTS</span></a>
 		                </div>
-		                <div className="col-md-6 boardImage">
+		                <div className="col-md-6 mainImgCol">
 		                    <img className="mainPic" src="./style/main-p1.jpg"/>
 		                </div>  
 		            </div>
 		            <div className="row">
-		                <div className="col-md-6">
+		                <div className="col-md-6 mainImgCol">
 		                    <img className="mainPic" src="./style/main-p2.jpg"/>
 		                </div> 
 		                <div className="col-md-6">
@@ -55,7 +55,7 @@ import Footer from "./footer.js"
 		                    <p>Can't find a great dish with an ingredient? No problem.. that food can still do some good. Find local charities to give food items to.</p>
 		                    <a className="btn homeBtn greenBtn" href="#/app/map"><span>DONATE</span></a>
 		                </div>
-		                <div className="col-md-6">
+		                <div className="col-md-6 mainImgCol">
 		                    <img className="mainPic" src="./style/main-p3.jpg"/>
 		                </div>  
 		            </div>

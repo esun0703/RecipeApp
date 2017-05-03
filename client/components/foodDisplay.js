@@ -72,7 +72,8 @@ export default class FoodDisplay extends React.Component {
         <div className="row" id="sideTitle">
           <h6>What's In Your Fridge</h6>
           <hr/>
-          <p>Foods (#)</p>
+          <p className="leftAlign">Foods</p>
+          <p className="rightAlign">Expiration Date (Days)</p> 
         </div>
 
         <div className="row" id="foodDisplay">

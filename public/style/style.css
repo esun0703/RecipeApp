@@ -44,6 +44,7 @@ hr{
 	margin-bottom:20px;
 }
 
+
 /*Main page - website components*/
 /*===========================================*/
 .navbar {
@@ -103,6 +104,7 @@ li{
 	padding-bottom:10px;
 	border-bottom:2px solid #dddddd;
 	text-align:left;
+
 }
 
 #sideTitle{
@@ -117,6 +119,17 @@ li{
 	margin-bottom:10px;
 }
 
+.leftAlign{
+	text-align:left;
+	margin:0;
+	padding:0;
+}
+.rightAlign{
+	text-align:right;
+	margin:0;
+	padding:0;
+}
+
 
 /*Food Component*/
 /*===========================================*/
@@ -129,6 +142,7 @@ li{
 	margin:0;
 	padding-right:0;
 	overflow:scroll;
+	margin-bottom:10px;
 }
 
 .foods /*.expirationDate*/{
@@ -144,8 +158,6 @@ li{
 	border-bottom:none;
 	font-size:14px;
 	font-weight:bold;
-	overflow:scroll;
-	
 }
 
 
@@ -165,7 +177,7 @@ li{
 	margin-left:0;
 	padding-top:0;
 	height:100px;
-	background-color:#ffffff;
+	background-color:#f1ffd3;
 }
 
 .form-group{
@@ -186,6 +198,7 @@ li{
 	background-color:black;
 	width:100%;
 }
+
 
 
 /*Results Main Component*/
@@ -249,15 +262,67 @@ li{
 	font-size:13px;
 }
 
-.recipeImg{
+/*.recipeImg{
 	width:100%;
 	height:100%;
-}
+}*/
 
 .recipeLnk{
 	font-size:10px;
 	font-weight:bold;
 }
+.thumbnail {
+    position: relative;
+    padding:0;
+    border:none;
+}
+
+.thumb-img {
+    margin: 0em;
+    padding: 0em;
+    -webkit-filter: grayscale(0%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    opacity: 1;
+   /* display: block;*/
+    width: 100%;
+    height:200px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.caption {
+	font-weight:bold;
+    text-align: center;
+    padding: 10px;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+
+.thumbnail:hover .thumb-img {
+    opacity: 0.1;
+    /*-webkit-filter: grayscale(100%);*/
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    margin: 0px;
+    padding: 0px;
+}
+
+.thumbnail:hover {
+    background-color: rgba(197, 249, 84, .2);
+}
+
+.thumbnail:hover .caption {
+	color:#444444;
+    /*background-color:rgba(110, 11, 191,.3);*/
+    opacity: 1;
+}
+
 
 /*map component*/
 /*===========================================*/
@@ -284,6 +349,9 @@ li{
 
 #mapSearch{
 	width:100%;
+	border:none;
+	border:2px solid #90d300;
+	color:#90d300;
 }
 
 #mapSearchRow{
