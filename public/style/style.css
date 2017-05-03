@@ -12,46 +12,93 @@ body, html {
 	height:100%;
 	margin:0px;
 	padding:0;
-	/*padding-top:20px;
-	padding-left:70px;*/
 }
 
 
 .row{
 	width:100%;
 	padding:0;
-	/*margin-right:10px;
-	padding-left:20px;*/
-	/*;*/
+	margin:0;
 }
 
 h6{
 	font-size:25px;
-	/*font-weight:bold;*/
 	line-height:10px;
 }
 
 hr{
 	line-height:0px;
 }
+
+
+
+.contentDisplay{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
+/*Main page - website components*/
 .navbar {
    background-color: transparent;
    background: transparent;
    border-color: transparent;
-   border-bottom:2px solid #afdb51;
-   padding-right:10px;
-   
+   border-bottom:3px solid #8bb640;
+   padding-right:10px;   
+   margin-bottom: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+	padding-right: 17px;
+	font-size: 14px;
+}
+
+.btn{
+	border: 0;
+    background-color: black;
+	padding: 0 30px;
+    color: white;
+	text-transform: uppercase;
+	line-height: 70px;
+	font-weight: 100;
+}
+
+.footer{
+	width: 100%;
+	height: 56px;
+	background: black;
+	color: white;
+	text-align: center;
+	letter-spacing: 5px;
+	padding-top: 35px;
+	font-size: 13px;
+	bottom: 0px;
+	border-width: bolder;
+}
+
+.btmtext{
+	color: white;
+}
+
+#bottom{
+	padding-top: 15px;
+	letter-spacing: 1.5px;
+	border-width: thin;
+	color: #808080;
+	font-size: 10px;
 }
 
 .container-fluid{
 	position:relative;
-
-	/*text-align:center;*/
 }
 
 .navbar ul{
 	color:#7ac8cb;
 }
+
 
 
 #navImg{
@@ -68,15 +115,12 @@ hr{
 #side {	
 	height:650px;
 	background-color:#afdb51;
-	margin-left:70px;
+	/*margin-left:30px;*/
 	padding-left:10px;
 	padding-top:10px;
 	padding-right:10px;
 	padding-bottom:10px;
-	/*padding-right:20px;*/
 	border-bottom:2px solid #dddddd;
-	/*padding-top:10px;*/
-	/*padding-bottom:8px;*/
 	text-align:left;
 }
 
@@ -94,12 +138,10 @@ hr{
 	display:flex;
 	flex-wrap:wrap;
 	justify-content:space-around;
-	width:100%;
+	/*width:100%;*/
 	background-color:#a5a5a5;
 	height:400px;
 	margin:0;
-	/*margin-top:10px;*/
-	/*padding-left:28px;*/
 	padding-right:0;
 	overflow:scroll;
 }
@@ -109,12 +151,13 @@ hr{
 	height:50px;
 	padding-top:15px;
 	padding-left:10px;
-	/*margin-top:5px;*/
-	/*margin-left:15px;*/
 	background-color:#ffffff;
-	border-top:2px solid #dddddd;
+	border-top:2px solid #e4fcb0;
 	border-bottom:none;
-	/*border-bottom:2px solid #dddddd;*/
+	font-size:14px;
+	font-weight:bold;
+	overflow:scroll;
+	
 }
 
 .foodName{
@@ -139,12 +182,14 @@ hr{
 	color:#ffffff;
 	border:none;
 	background-color:black;
-	/*margin-left:10px;*/
 	width:100%;
 }
 /*Results Main Component*/
 .results {
-	background-color:#4f4f4f;
+	width:65%;
+	/*background-color:#f7f0b9;*/
+	background-color:#fcf9e3;
+	margin-right:20px;
 	padding-top:20px;
 	padding-bottom:20px;
 	padding-left:15px;
@@ -166,20 +211,33 @@ hr{
 #choiceDisplay button{
 	margin-top:40px;
 	width:40%;
-	background-color:#afdb51;
 	color:black;
 	border:none;
+	border-radius:0;
 	margin-right:5px;
 }
 
+#donateBtn{
+	background-color:#afdb51;
+}
+
+#recipeBtn{
+	background-color:#e4fcb0;
+}
+
+	
+
+
 /*Recipes Components*/
+
 .recipe{
-	padding-top:5px;
+	/*padding-top:5px;
 	padding-left:8px;
 	padding-right:8px;
+	padding-bottom:5px;*/
 	height:200px;
-	margin-right:10px;
-	margin-bottom:20px;
+	/*margin-right:10px;*/
+	margin-bottom:10px;
 	background-color:#e4fcb0;
 	text-align:center;
 }
@@ -191,8 +249,9 @@ hr{
 }
 
 .recipeImg{
-	width:120px;
-	height:120px;
+	width:100%;
+	/*height:120px*/
+	height:100%;
 }
 
 .recipeLnk{
@@ -201,13 +260,45 @@ hr{
 }
 
 /*map component*/
+#donateIntroRow{
+	/*background-color:white;*/
+	margin-left:10px;
+	margin-bottom:20px;
+}
+
+#donateDescription{
+	text-align:justify;
+}
+
+#mapIntroImg{
+	width:100%;
+}
+
 #mapDisplay{
+	text-align:center;
+	padding-right:20px;
+	padding-bottom:20px;
+	padding-top:20px;
+	background-color:white;
+}
+
+#mapSearch{
+	width:80%;
+}
+
+#mapSearchRow{
 	text-align:center;
 }
 
-#mymap{
-	width:80%;
+#mapBtn{
+	background-color:black;
+	color:white;
+}
 
+#mymap{
+	margin-left:10px;
+	width:90%;
+	height:200px;
 }
 
 

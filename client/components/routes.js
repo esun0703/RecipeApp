@@ -7,12 +7,15 @@ import {RecipeList, Recipe} from "./recipe"
 import Maps from "./Donate/mapsComponent.js"
 import Choices from "./choices.js"
 import SplashImage from "./splashImage.js"
+import Home from "./home.js"
 
 const routes =()=>( 
  <Router history={hashHistory}>
-    <Route path="/" component={Main}>
-	  <Route path="/choice" component={Choices}/>
-	  <Route path="/map" component={Maps}>
+ 	<Route path="/" component={Home}>
+ 	</Route>
+    <Route path="/app" component={Main}>
+	  <Route path="choice" component={Choices}/>
+	  <Route path="map" component={Maps}>
 	  	<IndexRoute component={Maps}/>
 	  </Route>
 	  <Route path="recipes" component={RecipeList} >

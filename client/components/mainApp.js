@@ -3,6 +3,7 @@ import React from "react";
 import FoodDisplay from "./foodDisplay";
 // import ResultComponent from "./resultComponent.js" 
 import NavBar from "./navbar.js"
+import Footer from "./footer.js"
 
 
  class MainApp extends React.Component {
@@ -11,7 +12,7 @@ import NavBar from "./navbar.js"
         return(
             <div className="container">
                 <NavBar/>
-                <div className="container">
+                <div className="container contentDisplay">
                     <div className="row">
                       <div className="col-md-4">
                             <FoodDisplay/>
@@ -21,6 +22,7 @@ import NavBar from "./navbar.js"
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         );
     }
