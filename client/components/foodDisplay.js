@@ -1,7 +1,11 @@
 import React from "react";
 import FoodComponent from "./foodComponent.js";
  export default class FoodDisplay extends React.Component {
-    
+    handleClick() {
+	  // this.props.history.push('/some/path');
+	  console.log("hello")
+	  //Submit Route
+	}
   
     render(){
 		return(
