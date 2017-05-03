@@ -11,10 +11,11 @@ export default class Recipe extends React.Component {
 		return(
 				<div className="recipe">
 					<a className="recipeLnk" href={this.props.recipeLink}>
-					<h6>{this.props.recipeName}</h6>
 					<img className="recipeImg" src={this.props.recipeImage}/>
 					</a>
 				</div>
 		)
 	}
 }
+
+// <h6>{this.props.recipeName}</h6>
