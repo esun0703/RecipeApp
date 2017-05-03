@@ -7,9 +7,9 @@ export default class FoodComponent extends React.Component{
 		window.location = target
 	}
 	handleChoiceRedirect() {
-		this.handleRedirect('#/choice')
+		this.handleRedirect('#/app/choice')
 	}
-	
+
 	render(){
 
 
