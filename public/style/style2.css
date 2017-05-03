@@ -1,12 +1,26 @@
+.leftIndent{
+	padding-left:50px;
+}
 
+.rightIndent{
+	padding-right:50px;
+}
 .navbar {
    background-color: transparent;
    background: transparent;
    border-color: transparent;
    border-bottom:3px solid #8bb640;
    padding-right:10px;   
-   margin-bottom: 0;
+   margin-bottom: 10px;
+   text-align:center;
 }
+
+.container-fluid{
+	width:100%;
+	margin:0;
+	padding:0;
+}
+
 
 ul{
   list-style-type: none;
@@ -18,9 +32,9 @@ li{
 }
 
 .mainlogo{
-	display: block;
 	padding-top: 10px;
 	height: 35px;
+	/*margin-right:150px;*/
 }
 
 .smallyum{
@@ -37,13 +51,7 @@ li{
 	padding-top: 30px;
 }
 
-.row.boardground{
-	background-color: #f5f5f5;
-	margin: 0px 30px 80px 30px;
-	flex: 0 0 50%;
-	position: relative;
 
-}
 
 .btn{
 	border: 0;
@@ -69,9 +77,6 @@ li{
 	border-width: bolder;
 }
 
-.btmtext{
-	color: white;
-}
 
 #bottom{
 	padding-top: 15px;

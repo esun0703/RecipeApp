@@ -68,7 +68,7 @@ import axios  from 'axios';
 					)}				
 				</div>
 				<input id="foodInput" type="text" placeholder="Food Input"/>
-				<button id="submitBtn" onClick={this.handleClick}>Submit</button>
+				<button id="submitBtn" onClick={this.handleClick}>Search</button>
 			</div>
 		)	
     }
