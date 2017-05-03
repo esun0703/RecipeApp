@@ -1,18 +1,37 @@
+
 .navbar {
    background-color: transparent;
    background: transparent;
    border-color: transparent;
-   border-bottom:2px solid #8bb640;
-   padding-right:10px;
-   
+   border-bottom:3px solid #8bb640;
+   padding-right:10px;   
+   margin-bottom: 0;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li{
+	padding-right: 17px;
+	font-size: 14px;
 }
 
 .mainlogo{
-	width: 20%;
 	display: block;
-	margin: auto;
 	padding-top: 10px;
+	height: 35px;
 }
+
+.smallyum{
+	width: 25px;
+	padding-bottom: 5px;
+}
+
+.mainPic{
+	width: 100%;
+}
+
 
 .marketing{
 	padding-top: 30px;
@@ -26,38 +45,16 @@
 
 }
 
-/*.content{
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}*/
-
 .btn{
-/*	outline: none;
-	clear: both;
-	display: inline-block;
-	text-decoration: none;*/
 	border: 0;
     background-color: black;
 	padding: 0 30px;
-/*	height: 70px;
-	cursor: pointer;
-	margin: 0 auto;*/
     color: white;
 	text-transform: uppercase;
 	line-height: 70px;
 	font-weight: 100;
-
-/*	position: relative;
-	z-index: 100;
-	margin-left: 0px;
-	margin-bottom: 0px;
-	vertical-align: baseline;*/
 }
 
-.boardImage{
-
-}
 
 .footer{
 	width: 100%;
@@ -66,16 +63,18 @@
 	color: white;
 	text-align: center;
 	letter-spacing: 5px;
-	padding-top: 32px;
+	padding-top: 35px;
 	font-size: 13px;
-/*	position: absolute;*/
 	bottom: 0px;
 	border-width: bolder;
 }
 
+.btmtext{
+	color: white;
+}
 
 #bottom{
-	padding-top: 22px;
+	padding-top: 15px;
 	letter-spacing: 1.5px;
 	border-width: thin;
 	color: #808080;
