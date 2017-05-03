@@ -221,6 +221,12 @@ li{
 }
 
 /*Recipes Components*/
+
+.recipeMd4{
+	margin:0;
+	padding:0;
+	width:100%;
+}
 .recipe{
 	/*padding-top:5px;
 	padding-left:8px;
@@ -228,7 +234,7 @@ li{
 	padding-bottom:5px;*/
 	height:200px;
 	/*margin-right:10px;*/
-	margin-bottom:20px;
+	margin-bottom:10px;
 	background-color:#e4fcb0;
 	text-align:center;
 }
