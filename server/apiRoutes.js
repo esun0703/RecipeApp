@@ -26,13 +26,6 @@ module.exports = function(app) {
 // 	app.get("/", function(req, res){
 // 		res.sendFile(path.join(__dirname, "../public/index.html"))
 
-<<<<<<< HEAD
-=======
-// 	});
-
-
-
->>>>>>> 4e2629f3f971740c305ddb4ed699817978835557
 	//endpoint to return a list of the user's foods with the xpiration date
 	// app.get('/userfoods', function(req, res) {
 		
@@ -109,17 +102,6 @@ app.get("/all", function(req, res) {
 // 		// request("https://maps.googleapis.com/maps/api/geocode/json?address=" + req.&key=AIzaSyD1b9U8M4FK8ETr_ZpuEDMTOMPkxrJI1jU")
 
 // })
-
-//adding food route to api router
-app.get('/foods', function(req, res){
-  Food.find(function(err,foods){
-    if (err) res.send(err);
-    res.json(foods)
-  });
-});
-
-
-
 
 
 
