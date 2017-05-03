@@ -2,7 +2,7 @@ $(document).ready();
 
 $("#search").on("click", function(){
 	var searchQuery = document.getElementById("input").value;
-	var searchURL = "/search?query=" + searchQuery
+	var searchURL = "/search?query=" + searchQuery;
 $.ajax({
 	url: searchURL,
 	method: "GET"

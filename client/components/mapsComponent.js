@@ -89,7 +89,7 @@ export default class Maps extends React.Component {
         <h1>DONATE</h1>
         <div id="donateIntroRow" className="row">
           <div className="col-md-6">
-            <img id="mapIntroImg" src="../public/style/main-p3.jpg"/>
+            <img id="mapIntroImg" src="/style/main-p3.jpg"/>
           </div>
           <div id="donateDescription" className="col-md-6">
             <h3>How To Donate</h3>
