@@ -1,5 +1,5 @@
 import React from "react";
-import { browserHistory } from 'react-router';
+import {browserHistory} from 'react-router';
 import axios from 'axios';
 
 export default class FoodComponent extends React.Component{
@@ -17,8 +17,8 @@ export default class FoodComponent extends React.Component{
 			// const {name,expiration}=this.props??
 			<div className="row">
 				<div className="foods" onClick={this.handleChoiceRedirect.bind(this)}>
-					<span className="foodName">{this.props.food.name}</span>
-					<span className="expirationDate">{this.props.food.shelf_life}</span>
+					<span className="foodName">{this.props.food.food_name}</span>
+					<span className="expirationDate">{this.props.food.shelf_life} Days</span>
 				</div>
 			</div>
 		)
