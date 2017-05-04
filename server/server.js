@@ -28,14 +28,9 @@ var app = express();
 //////////////////////
 
 // parse application/x-www-form-urlencoded 
-app.use(bodyParser.urlencoded({ extended: true }))
- 
+app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json 
-app.use(bodyParser.json({ type: 'application/**json'}))
-
-app.use(bodyParser.raw({type: 'application/vnd.custom-type'}))
-
-app.use(bodyParser.text({type: 'text/html'}))
+app.use(bodyParser.json());
 
 
 // Set Static Folder

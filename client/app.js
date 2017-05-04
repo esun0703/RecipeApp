@@ -14,4 +14,3 @@ import Routes from "./components/routes";
 
 ReactDOM.render(
   <Routes/>, document.getElementById("foodRoot"));
-// >>>>>>> 65ffaa92ca6e1e8a2051bb0d5d450b2dfb14ac47

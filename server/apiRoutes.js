@@ -64,8 +64,8 @@ app.get("/all", function(req, res) {
 
 
 app.post('/userfoods', function(req,res){
-
-	db.foods.insert({},function(error,found){
+    console.log('in user foods', req.body);
+    db.foods.insert(req.body.data,function(error,found){
 		if (error) {
 			console.log(error);
 		}
