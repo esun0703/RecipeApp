@@ -97,6 +97,7 @@ li{
 
 .blackBtn{
 	background-color:black;
+	color:white;
 }
 
 .mainlogo{
@@ -118,24 +119,29 @@ li{
 	height:650px;
 	background-color:#afdb51;
 	padding-left:10px;
-	padding-top:10px;
+	padding-top:20px;
 	padding-right:10px;
 	padding-bottom:10px;
 	border-bottom:2px solid #dddddd;
-	text-align:left;
-
+	text-align:center;
+	font-weight:bold;
+	color:white;
 }
 
 #sideTitle{
-	background-color:#353534;
-	height:90px;
+	border-top:2px solid white;
+	border-radius:2px;
+	background-color:black;
+	height:20px;
 	margin:0;
+	margin-top:30px;
 	padding-right:5px;
-	padding-top:10px;
+	padding-top:30px;
+	padding-bottom:15px;
 	padding-left:10px;
 	line-height: 0px;
-	color:#90d300;
-	margin-bottom:10px;
+	color:white;
+	
 }
 
 .leftAlign{
@@ -179,6 +185,7 @@ li{
 	border-left:2px solid #e4fcb0;
 	font-size:14px;
 	font-weight:bold;
+	color:black;
 }
 
 
@@ -252,44 +259,28 @@ li{
 #choiceDisplay{
 	text-align:center;
 	color:#afdb51;
-	background-color:white;
+	background-image: url("main-go.jpg");
 	width:100%;
 	height:100%;
-	padding-top:20px;
-	padding-right:20px;
-	padding-left:20px;
 }
 
+#overlay{
+	color:black;
+	padding-top:50px;
+	background-color:rgba(255,255,255,.3);
+	width:100%;
+	height:100%;
+	font-size:16px;
+	font-weight:bold;
+}
 #choiceDisplay button{
 	margin-top:40px;
-	width:48%;
+	width:30%;
 	color:black;
 	border:none;
 	border-radius:1;
-	margin-right:5px;
+	margin-right:10px;
 	height:80px;
-
-}
-
-#choiceDisplay h1{
-	margin:0;
-	margin-bottom:40px;
-	color:#77a806;
-	font-weight:bold;
-}
-
-#choiceIntro{
-	text-align:justify;
-	font-size:16px;
-}
-#choiceDisplay p{
-	color:black;
-}
-
-#choiceDisplay h3{
-	margin:0;
-	margin-bottom:5px;
-	font-weight:bold;
 }
 
 .greenBtn{
@@ -313,7 +304,9 @@ li{
 }
 
 #choiceImg{
-	width:100%;
+	margin-top:20px;
+	width:50%;
+	height:50%;
 }
 
 /*Recipes Components*/
@@ -338,8 +331,9 @@ li{
 }*/
 
 .recipeLnk{
-	font-size:10px;
+	font-size:12px;
 	font-weight:bold;
+	color:#8cc603;
 }
 .thumbnail {
     position: relative;
