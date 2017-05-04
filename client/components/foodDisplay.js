@@ -11,11 +11,17 @@ export default class FoodDisplay extends React.Component {
         shelf_life: '1',
       },],
     };
+    // this.handleInputChange = this.handleInputChange.bind(this);
   }
   
-  addFood(newFood) {
-    this.setState({ foods: this.state.foods.concat(newFood), });
-  }
+  // handleInputChange(event) {
+  //   this.setState({ 
+  //     foods: [{
+  //       // food_name:this.state.foods.concat(newFood),
+        
+  //       }], 
+  //   });
+  // }
   
   createFood(food) {
     console.log('food argument', food);
@@ -32,7 +38,7 @@ export default class FoodDisplay extends React.Component {
   
   getFoods() {
     // change this to route "/all"
-  //  var root = 'https://jsonplaceholder.typicode.com';
+    //  var root = 'https://jsonplaceholder.typicode.com';
     // this can later delete
     // const todoToFood =todo=>({name: todo.title, 'shelf_life':todo.id});
      // uses axios to get the route for the get request
@@ -58,7 +64,12 @@ export default class FoodDisplay extends React.Component {
   }
   
   handleClick() {
-    this.createFood({ food_name: 'testFood', shelf_life: 1, });
+    console.log("handleClick food_name" + this.state.food_name)
+    console.log("handleClick shelf_life" + this.state.food_name)
+    this.createFood({ 
+      food_name: this.state.food_name,
+      shelf_life:this.state.shelf_life, 
+    });
 
    // this.props.history.push('/some/path');
     console.log('hello');
@@ -83,12 +94,28 @@ export default class FoodDisplay extends React.Component {
         </div>
         <form>
         	<div className="form-group">
-	        	<input className="formInput" id="food_name" type="text" placeholder="Food Name"/>
+	        	<input 
+              name="food_name"
+              value={this.state.food_name}
+              onChange={this.handleInputChange} 
+              className="formInput" 
+              id="food_name" 
+              type="text" 
+              placeholder="Food Name"
+            />
 			</div>
 			  <div className="form-group">
-	        	<input className="formInput" id="shelf_life" type="text" placeholder="Shelf Life"/>
+	        	<input 
+              name="shelf_life"
+              value={this.state.shelf_life}
+              onChange={this.handleInputChange} 
+              className="formInput" 
+              id="shelf_life" 
+              type="text" 
+              placeholder="Shelf Life"
+            />
 			  </div>
-	        <button id="submitBtn" onClick={(e)=>{ console.log('this from handle', this, e);this.handleClick()}}>Search</button>
+	        <button id="submitBtn" onClick={(e)=>{ console.log('this from handle', this, e);this.handleClick()}}>SUBMIT</button>
         </form>
       </div>
     );
