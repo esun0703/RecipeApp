@@ -67,7 +67,7 @@ export default class FoodDisplay extends React.Component {
   render() {
     return (
       <div id="side">
-        <h6>What's In Your Fridge</h6>
+        <h6>What's In Your Fridge?</h6>
         <div className="row" id="sideTitle">
           <p className="leftAlign">Foods</p>
           <p className="rightAlign">Expiration Date (Days)</p> 

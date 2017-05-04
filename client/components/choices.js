@@ -18,12 +18,10 @@ export default class Choices extends React.Component {
 		return(
 			// const {name,expiration}=this.props??
 			<div id="choiceDisplay">
-				<div id="overlay">
 					<h1>What Would You Like To Do With Your Food?</h1>    
 					<button type="button" className="btn btn-primary btn-lg greenBtn" onClick={this.handleMapRedirect.bind(this)}>DONATE</button>
 					<button type="button" className="btn btn-primary btn-lg yellowBtn" onClick={this.handleRecipesRedirect.bind(this)}>RECIPES</button>
-					<img id="choiceImg" src="/style/symbol.jpg"/>
-				</div>
+					<img id="choiceImg" src="/style/yumcacheSymbol.png"/>
 			</div>
 		)
 	}
