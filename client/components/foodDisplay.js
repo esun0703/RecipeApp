@@ -49,7 +49,6 @@ export default class FoodDisplay extends React.Component {
     console.log(this.state.foods);
   }
   
-  //click handler for each food componet
   handleRedirect(target) {
     window.location = target;
   }
@@ -58,10 +57,13 @@ export default class FoodDisplay extends React.Component {
     this.handleRedirect('#/choice');
   }
   
-  //Compoent for post route
   handleClick() {
-    this.createFood({ food_name: /*this.state.food_name,*/ shelf_life: /*this.state.shelf_life,*/ });
+    this.createFood({ food_name: 'testFood', shelf_life: 1, });
+
+   // this.props.history.push('/some/path');
     console.log('hello');
+
+   // Submit Route
   }
   
   render() {
@@ -81,10 +83,10 @@ export default class FoodDisplay extends React.Component {
         </div>
         <form>
         	<div className="form-group">
-	        	<input className="formInput" id="food_name" type="text" placeholder="Food Name" value={this.state.food_name} onChange={this.handleNameChange}/>
+	        	<input className="formInput" id="food_name" type="text" placeholder="Food Name"/>
 			</div>
 			  <div className="form-group">
-	        	<input className="formInput" id="shelf_life" type="text" placeholder="Shelf Life" value={this.state.shelf_life} onChange={this.handleShelfChange}/>
+	        	<input className="formInput" id="shelf_life" type="text" placeholder="Shelf Life"/>
 			  </div>
 	        <button id="submitBtn" onClick={(e)=>{ console.log('this from handle', this, e);this.handleClick()}}>Search</button>
         </form>

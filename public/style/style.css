@@ -156,20 +156,26 @@ li{
 }
 
 .foods /*.expirationDate*/{
+	outline: 0 none;
+	margin:0;
 	width:100%;
 	height:50px;
-	padding-top:15px;
+	padding-top:5px;
 	padding-left:10px;
 	background-color:#ffffff;
+	box-shadow: none;
+	border: none;
 	border-top:2px solid #e4fcb0;
 	border-right:2px solid #e4fcb0;
 	border-left:2px solid #e4fcb0;
-	border-radius:2%;
-	border-bottom:none;
 	font-size:14px;
 	font-weight:bold;
 }
 
+
+.foods:hover{
+	background-color:#e3f9ae;
+}
 
 
 .foodName{
@@ -207,6 +213,9 @@ li{
 	border:none;
 	background-color:black;
 	width:100%;
+}
+#submitBtn:hover{
+	background-color:#545454;
 }
 
 
@@ -280,10 +289,18 @@ li{
 	font-weight:bold;
 }
 
+.greenBtn:hover{
+	background-color:#6d960f;
+}
+
 .yellowBtn{
 	background-color:#f9dd04;
 	color:black;
 	font-weight:bold;
+}
+
+.yellowBtn:hover{
+	background-color:#e0c900;
 }
 
 #choiceImg{
