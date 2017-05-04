@@ -7,8 +7,8 @@ export default class FoodDisplay extends React.Component {
     super();
     this.state = {
       foods: [{
-//         name: 'testFood',
-//         shelf_life: '1',
+        name: 'testFood',
+        shelf_life: '1',
       },],
     };
   }
