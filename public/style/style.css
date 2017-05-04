@@ -65,6 +65,20 @@ li{
 	padding-right: 17px;
 	font-size: 14px;
 }
+ 
+
+ .navbar-inverse .navbar-nav>li>a:hover{
+ 	color:#8bb640;
+ }
+
+.navbar-inverse .navbar-nav>li>a{
+ color:#7c7c7a;
+}
+}
+
+./*navbar-inverse .navbar-nav>li>a>.active{
+ 	color:black;
+ }*/
 
 
 .btn{
@@ -81,16 +95,12 @@ li{
 	position:relative;
 }
 
-.navbar ul{
-	color:#7ac8cb;
-}
-
 
 .mainlogo{
 	position:absolute;
 	left:45%;
 	margin-top:10px;
-	width:13%;
+	width:200px;
 }
 
 /*Side Bar*/
@@ -224,27 +234,61 @@ li{
 #choiceDisplay{
 	text-align:center;
 	color:#afdb51;
+	background-color:white;
+	width:100%;
+	height:100%;
+	padding-top:20px;
+	padding-right:20px;
+	padding-left:20px;
 }
 
 #choiceDisplay button{
 	margin-top:40px;
-	width:40%;
+	width:48%;
 	color:black;
 	border:none;
-	border-radius:0;
+	border-radius:1;
 	margin-right:5px;
+	height:80px;
+
+}
+
+#choiceDisplay h1{
+	margin:0;
+	margin-bottom:40px;
+	color:#77a806;
+	font-weight:bold;
+}
+
+#choiceIntro{
+	text-align:justify;
+	font-size:16px;
+}
+#choiceDisplay p{
+	color:black;
+}
+
+#choiceDisplay h3{
+	margin:0;
+	margin-bottom:5px;
+	font-weight:bold;
 }
 
 .greenBtn{
 	background-color:#afdb51;
 	color:black;
+	font-weight:bold;
 }
 
 .yellowBtn{
 	background-color:#f9dd04;
 	color:black;
+	font-weight:bold;
 }
 
+#choiceImg{
+	width:100%;
+}
 
 /*Recipes Components*/
 /*===========================================*/
@@ -375,13 +419,21 @@ li{
 	width: 100%;
 	height: 56px;
 	background: black;
-	color: white;
+	color:#ffffff;
 	text-align: center;
 	letter-spacing: 5px;
 	padding-top: 35px;
 	font-size: 13px;
 	bottom: 0px;
 	border-width: bolder;
+}
+
+.footer a{
+	color: #8bb640;
+}
+
+.footer>span{
+	margin-right:3px;
 }
 
 .btmtext{

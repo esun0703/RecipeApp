@@ -15,11 +15,11 @@ import React from "react";
 			<div className="row container-fluid">
 	            <footer className="footer"> 
 	                <nav>
-	                    <a href="/about">ABOUT US</a>
-	                    <span>|</span>
-	                    <a href="/donation">DONATION</a>
-	                    <span>|</span>
-	                    <a href="/contact">CONTACT</a>
+	                    <a href="#/">HOME</a>
+	                    <span>&nbsp;|&nbsp;</span>
+	                    <a href="#/app/recipes">RECIPES</a>
+	                    <span>&nbsp;|&nbsp;</span>
+	                     <a href="https://github.com/esun0703/RecipeApp">GITHUB</a>
 	                </nav>
 	                <div className="footer" id="bottom">
 	                    All rights reserved YumCache 2017&copy; 
