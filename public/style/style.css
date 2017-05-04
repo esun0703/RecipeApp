@@ -95,12 +95,21 @@ li{
 	position:relative;
 }
 
+.blackBtn{
+	background-color:black;
+}
 
 .mainlogo{
 	position:absolute;
 	left:45%;
 	margin-top:10px;
 	width:200px;
+}
+
+.homeBtn {
+	width:30%;
+	padding-top:23px;
+	height:70px;
 }
 
 /*Side Bar*/
@@ -156,20 +165,26 @@ li{
 }
 
 .foods /*.expirationDate*/{
+	outline: 0 none;
+	margin:0;
 	width:100%;
 	height:50px;
-	padding-top:15px;
+	padding-top:5px;
 	padding-left:10px;
 	background-color:#ffffff;
+	box-shadow: none;
+	border: none;
 	border-top:2px solid #e4fcb0;
 	border-right:2px solid #e4fcb0;
 	border-left:2px solid #e4fcb0;
-	border-radius:2%;
-	border-bottom:none;
 	font-size:14px;
 	font-weight:bold;
 }
 
+
+.foods:hover{
+	background-color:#e3f9ae;
+}
 
 
 .foodName{
@@ -207,6 +222,9 @@ li{
 	border:none;
 	background-color:black;
 	width:100%;
+}
+#submitBtn:hover{
+	background-color:#545454;
 }
 
 
@@ -280,10 +298,18 @@ li{
 	font-weight:bold;
 }
 
+.greenBtn:hover{
+	background-color:#6d960f;
+}
+
 .yellowBtn{
 	background-color:#f9dd04;
 	color:black;
 	font-weight:bold;
+}
+
+.yellowBtn:hover{
+	background-color:#e0c900;
 }
 
 #choiceImg{
@@ -359,6 +385,7 @@ li{
 
 .thumbnail:hover {
     background-color: rgba(197, 249, 84, .2);
+    border:3px dashed #95d304;
 }
 
 .thumbnail:hover .caption {
@@ -402,10 +429,6 @@ li{
 	margin-left:10px;
 }
 
-#mapBtn{
-	background-color:black;
-	color:white;
-}
 
 #mymap{
 	margin-left:10px;

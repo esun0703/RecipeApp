@@ -100,7 +100,7 @@ export default class Maps extends React.Component {
         </div>
         <div id="mapSearchRow" className="row">
           <input type="text" className="form-control" aria-label="..." id="input" id="mapSearch" placeholder="Search Places" value={this.state.input} onChange={this.handleChange.bind(this)} required/>
-          <button id="mapBtn" onClick={this.handleClick.bind(this)}>Search</button>
+          <button className="btn yellowBtn" onClick={this.handleClick.bind(this)}>Search</button>
         </div>
         <h1>Nearby Food Pantries</h1>
         <div ref="map" id="mymap">I should be a map!</div>

@@ -33,7 +33,7 @@ import Footer from "./footer.js"
 		                <div className="col-md-6 leftIndent">
 		                    <h2>YumCache</h2>
 		                    <p>Don't let your delicious food go bad. Keep track of your food expiration dates and see when it's time to create something beautiful.</p>
-		                     <a className="btn homeBtn" href="#/app"><span>VIEW INGREDIENTS</span></a>
+		                     <a className="btn blackBtn homeBtn" href="#/app"><span>VIEW INGREDIENTS</span></a>
 		                </div>
 		                <div className="col-md-6 mainImgCol">
 		                    <img className="mainPic" src="style/main-p1.jpg"/>
