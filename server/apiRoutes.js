@@ -56,6 +56,7 @@ app.get("/all", function(req, res) {
       console.log(error);
     }
     else {
+
       res.json(found);
     }
   });
@@ -65,12 +66,13 @@ app.get("/all", function(req, res) {
 
 app.post('/userfoods', function(req,res){
     console.log('in user foods', req.body);
-    db.foods.insert(req.body.data,function(error,found){
+    db.foods.insert({food_name:req.body.food_name, shelf_life:parseInt(req.body.shelf_life)},function(error,found){
 		if (error) {
 			console.log(error);
 		}
 		else {
 			res.json(found);
+			// res.redirect("#/app/recipes");
 		}
 
 		console.log("CONNECTION TO MONGODB WORKING");
