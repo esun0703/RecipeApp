@@ -16,7 +16,7 @@ import Footer from "./footer.js"
                 		<img className="mainPic" src="style/main.jpg"/>  
         			</div>
 
-			        <div className="row homeRow">
+			        <div className="row">
 			            <div className="col-md-6 mainImgCol">
 			                <img className="mainPic" src="style/main-go.jpg"/>  
 			            </div>
@@ -29,7 +29,7 @@ import Footer from "./footer.js"
 			            </div>
 			        </div>
 
-		            <div className="row homeRow">  
+		            <div className="row" id="grayRow">  
 		                <div className="col-md-6 homeContent leftIndent">
 		                    <h2>TRACK INGREDIENTS</h2>
 			                <br/>
