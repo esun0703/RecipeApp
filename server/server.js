@@ -13,12 +13,23 @@ var mongoose = require('mongoose');
 var expressValidator = require('express-validator');
 
 ////////The Mongoose.connect should link to franco's heroku mlab link
-mongoose.connect('mongodb://localhost/userfoods');
+var databaseUri = 'mongodb://localhost/userfoods';
+
+
+if (process.env.MONGODB_URI) {
+    //this executes if this is being executed in your heroku app
+    mongoose.connect(process.env.MONGODB_URI);
+} else {
+    //this executes if this is being executed on your local machine
+    mongoose.connect(databaseUri);
+}
 ///////
 var db = mongoose.connection;
 
 // Init App
 var app = express();
+
+
 
 ////////////////
 // // View Engine (do we need this?)
@@ -28,8 +39,8 @@ var app = express();
 //////////////////////
 
 // parse application/x-www-form-urlencoded 
-app.use(bodyParser.urlencoded({ extended: false }))
-// parse application/json 
+    app.use(bodyParser.urlencoded({ extended: false }))
+    // parse application/json 
 app.use(bodyParser.json());
 
 
@@ -53,32 +64,32 @@ app.use(passport.session());
 
 // Express Validator
 app.use(expressValidator({
-  errorFormatter: function(param, msg, value) {
-      var namespace = param.split('.')
-      , root    = namespace.shift()
-      , formParam = root;
+    errorFormatter: function(param, msg, value) {
+        var namespace = param.split('.'),
+            root = namespace.shift(),
+            formParam = root;
 
-    while(namespace.length) {
-      formParam += '[' + namespace.shift() + ']';
+        while (namespace.length) {
+            formParam += '[' + namespace.shift() + ']';
+        }
+        return {
+            param: formParam,
+            msg: msg,
+            value: value
+        };
     }
-    return {
-      param : formParam,
-      msg   : msg,
-      value : value
-    };
-  }
 }));
 
 // Connect Flash
 app.use(flash());
 
 // Global Vars
-app.use(function (req, res, next) {
-  res.locals.success_msg = req.flash('success_msg');
-  res.locals.error_msg = req.flash('error_msg');
-  res.locals.error = req.flash('error');
-  res.locals.user = req.user || null;
-  next();
+app.use(function(req, res, next) {
+    res.locals.success_msg = req.flash('success_msg');
+    res.locals.error_msg = req.flash('error_msg');
+    res.locals.error = req.flash('error');
+    res.locals.user = req.user || null;
+    next();
 });
 
 
@@ -86,5 +97,5 @@ app.use(function (req, res, next) {
 
 
 app.listen(PORT, function() {
-  console.log("App listening on PORT: " + PORT);
+    console.log("App listening on PORT: " + PORT);
 });
