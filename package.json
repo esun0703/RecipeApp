@@ -4,7 +4,7 @@
   "description": "a small react recipe app",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node server/server.js",
     "build": "webpack -w"
   },
   "repository": "https://github.com/esun0703/RecipeApp.git",
